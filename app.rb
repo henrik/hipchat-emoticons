@@ -18,6 +18,9 @@ set :haml, :format => :html5, :attr_wrapper => %{"}
 set :views, lambda { root }
 
 get '/' do
+  # Cache in Varnish: http://devcenter.heroku.com/articles/http-caching
+  headers 'Cache-Control' => 'public, max-age=3600'
+
   @default_emoticons = default_emoticons
   @secret_emoticons = secret_emoticons
   haml :index
