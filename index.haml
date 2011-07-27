@@ -17,9 +17,9 @@
           margin: 3em 0 2em
           a
             display: inline-block
+            text-align: center
             width: 41px
             height: 41px
-            text-align: center
             padding: 3px
 
   %body
@@ -28,14 +28,16 @@
       %h1 HipChat emoticons
       %p
         A complete(?) list of
-        <strong>#{@default_emoticons.length}</strong> default + <strong>#{@secret_emoticons.length}</strong> secret = <strong>#{@default_emoticons.length+@secret_emoticons.length}</strong>
+        <strong>#{@default_emoticons.length}</strong> default +
+        <strong>#{@secret_emoticons.length}</strong> secret =
+        <strong>#{@default_emoticons.length+@secret_emoticons.length}</strong>
         <a href="http://www.hipchat.com/r/2zt39">HipChat</a> emoticons.
 
     #emoticons
       - [ @default_emoticons, @secret_emoticons ].each do |emoticons|
         %p
           - emoticons.each do |e|
-            %a{ :href => "#", :onclick => %{ prompt("Copy this:", #{e.string.to_json}); return false } }
+            %a{ :href => "#", :onclick => %{ prompt("Copy this:", #{e.string.to_json}); return false;} }
               %img{:alt => e.shortcut, :title => e.string,
                 :src => e.url, :style => "width:#{e.width}px; height:#{e.height}px" }
 
