@@ -15,7 +15,7 @@
           font-family: 'Varela Round', sans-serif
         #emoticons
           margin: 3em 0
-          span
+          a
             display: inline-block
             width: 45px
             height: 45px
@@ -31,7 +31,7 @@
       - [ @default_emoticons, @secret_emoticons ].each do |emoticons|
         %p
           - emoticons.each do |e|
-            %span
+            %a{ :href => "#", :onclick => %{ prompt("Copy this:", #{e.string.to_json}); return false } }
               %img{:alt => e.shortcut, :title => e.string,
                 :src => e.url, :style => "width:#{e.width}px; height:#{e.height}px" }
 
