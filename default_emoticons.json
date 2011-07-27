@@ -1,0 +1,24 @@
+{
+  "emoticon": [
+    { "id": "0", "path": "smile.png", "shortcut": ":-)", "height": "18", "width": "18" },
+    { "id": "0", "path": "gasp.png", "shortcut": ":o", "height": "18", "width": "18" },
+    { "id": "0", "path": "moneymouth.png", "shortcut": ":$", "height": "18", "width": "18" },
+    { "id": "0", "path": "slant.png", "shortcut": ":", "height": "18", "width": "18" },
+    { "id": "0", "path": "frown.png", "shortcut": ":(", "height": "18", "width": "18" },
+    { "id": "0", "path": "kiss.png", "shortcut": ":-*", "height": "18", "width": "18" },
+    { "id": "0", "path": "footinmouth.png", "shortcut": ":#", "height": "18", "width": "18" },
+    { "id": "0", "path": "cry.png", "shortcut": ":'(", "height": "18", "width": "18" },
+    { "id": "0", "path": "wink.png", "shortcut": ";-)", "height": "18", "width": "18" },
+    { "id": "0", "path": "angry.png", "shortcut": ">:-(", "height": "18", "width": "18" },
+    { "id": "0", "path": "embarrassed.png", "shortcut": "(embarrassed)", "height": "18", "width": "18" },
+    { "id": "0", "path": "sealed.png", "shortcut": ":Z", "height": "18", "width": "18" },
+    { "id": "0", "path": "tongue.png", "shortcut": ":p", "height": "18", "width": "18" },
+    { "id": "0", "path": "cool.png", "shortcut": "8-)", "height": "18", "width": "18" },
+    { "id": "0", "path": "innocent.png", "shortcut": "O:)", "height": "22", "width": "18" },
+    { "id": "0", "path": "bigsmile.png", "shortcut": ":-D", "height": "18", "width": "18" },
+    { "id": "0", "path": "oops.png", "shortcut": "(oops)", "height": "18", "width": "18" },
+    { "id": "0", "path": "straightface.png", "shortcut": ":|", "height": "18", "width": "18" },
+    { "id": "0", "path": "thumbs_up.png", "shortcut": "(thumbsup)", "height": "16", "width": "16" },
+    { "id": "0", "path": "thumbs_down.png", "shortcut": "(thumbsdown)", "height": "16", "width": "16" }
+  ]
+}

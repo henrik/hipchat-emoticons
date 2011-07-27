@@ -1,6 +1,39 @@
 !!!
 %html
   %head
-    %title wat
+    %meta(charset="utf-8")
+    %title HipChat emoticons
+    /[if lt IE 9]
+      %script(src="//html5shim.googlecode.com/svn/trunk/html5.js")
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round&v2' rel='stylesheet' type='text/css'>
+    %style
+      :sass
+        body
+          margin: 0
+          padding: 1em 2em
+          max-width: 65em
+          font-family: 'Varela Round', sans-serif
+        #emoticons
+          margin: 3em 0
+          span
+            display: inline-block
+            width: 45px
+            height: 45px
+            text-align: center
+
   %body
-    %p halloa
+
+    %header
+      %h1 HipChat emoticons
+      %p A complete(?) list of <a href="http://www.hipchat.com/r/2zt39">HipChat</a> emoticons.
+
+    #emoticons
+      - [ @default_emoticons, @secret_emoticons ].each do |emoticons|
+        %p
+          - emoticons.each do |e|
+            %span
+              %img{:alt => e.shortcut, :title => e.string,
+                :src => e.url, :style => "width:#{e.width}px; height:#{e.height}px" }
+
+    %footer
+      %p By <a href="http://henrik.nyh.se">Henrik Nyh</a>.
