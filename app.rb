@@ -4,7 +4,7 @@
 # Log into the chat in a browser and look for the response to a XHR
 # request like https://accountname.hipchat.com/api/get_emoticons.
 #
-# default_emoticons.json:
+# standard_emoticons.json:
 # Just looked at the HTML and built a file to match emoticons.json.
 
 
@@ -21,7 +21,7 @@ get '/' do
   # Cache in Varnish: http://devcenter.heroku.com/articles/http-caching
   headers 'Cache-Control' => 'public, max-age=3600'
 
-  @default_emoticons = default_emoticons
+  @standard_emoticons = standard_emoticons
   @secret_emoticons = secret_emoticons
   haml :index
 end
@@ -39,7 +39,7 @@ class Emoticon
     @width = data["width"].to_i
     @height = data["height"].to_i
 
-    @default = opts[:default]
+    @standard = opts[:standard]
   end
 
   def url
@@ -47,7 +47,7 @@ class Emoticon
   end
 
   def string
-    @default ? shortcut : "(#{shortcut})"
+    @standard ? shortcut : "(#{shortcut})"
   end
 
   def <=>(other)
@@ -56,12 +56,12 @@ class Emoticon
 
 end
 
-def default_emoticons
-  emoticons_from_file("./default_emoticons.json").map { |e| Emoticon.new(e, :default => true) }
+def standard_emoticons
+  emoticons_from_file("./standard_emoticons.json").map { |e| Emoticon.new(e, :standard => true) }
 end
 
 def secret_emoticons
-  emoticons_from_file("./emoticons.json").map { |e| Emoticon.new(e, :default => false) }.sort
+  emoticons_from_file("./emoticons.json").map { |e| Emoticon.new(e, :standard => false) }.sort
 end
 
 def emoticons_from_file(file)
