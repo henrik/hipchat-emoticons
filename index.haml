@@ -38,7 +38,7 @@
       - [ @standard_emoticons, @secret_emoticons ].each do |emoticons|
         %p
           - emoticons.each do |e|
-            %a{ :href => "#", :onclick => %{ prompt("Copy this:", #{e.string.to_json}); return false;} }
+            %a{ :href => "##{e.string}", :onclick => %{ prompt("Copy this:", #{e.string.to_json}); return false;} }
               %img{:alt => e.shortcut, :title => e.string,
                 :src => e.url, :style => "width:#{e.width}px; height:#{e.height}px" }
 
