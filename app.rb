@@ -1,14 +1,5 @@
 # By Henrik Nyh <henrik@nyh.se> 2011-07-27 under the MIT license.
-#
-# emoticons.json:
-# Log into the chat in a browser and look for the response to a XHR
-# request like https://accountname.hipchat.com/api/get_emoticons.
-# Then run it through http://jsonformatter.curiousconcept.com/
-# for pretty printing, mostly so the diff will be readable.
-#
-# standard_emoticons.json:
-# Just looked at the HTML and built a file to match emoticons.json.
-
+# See README.
 
 require "rubygems"
 require "sinatra"
