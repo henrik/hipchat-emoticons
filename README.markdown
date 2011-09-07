@@ -17,6 +17,8 @@ and then run
 
 on the command line to update emoticons.json.
 
+Note that the token isn't very long-lived. Maybe an hour or two?
+
 ## Updating standard\_emoticons.json:
 
 I just looked at the HTML and built the file manually.
