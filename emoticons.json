@@ -517,6 +517,20 @@
       "path": "10678/kennypowers.png",
       "shortcut": "kennypowers",
       "width": "25"
+    },
+    {
+      "id": "182",
+      "height": "18",
+      "path": "disapproval.png",
+      "shortcut": "disapproval",
+      "width": "23"
+    },
+    {
+      "id": "184",
+      "height": "25",
+      "path": "zoidberg.png",
+      "shortcut": "zoidberg",
+      "width": "25"
     }
   ]
 }
