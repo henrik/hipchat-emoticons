@@ -1,6 +1,7 @@
 require "open-uri"
-require "json"
 require "pp"
+require "rubygems"
+require "json"
 
 desc "Updates emoticons.json. See README."
 task :default do
