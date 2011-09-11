@@ -16,6 +16,7 @@ get '/' do
 
   @standard_emoticons = standard_emoticons
   @secret_emoticons = secret_emoticons
+  @updated_on = [ File.mtime("./emoticons.json"), File.mtime("./standard_emoticons.json") ].max
   haml :index
 end
 

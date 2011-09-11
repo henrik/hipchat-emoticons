@@ -43,4 +43,6 @@
                 :src => e.url, :style => "width:#{e.width}px; height:#{e.height}px" }
 
     %footer
-      %p By <a href="http://henrik.nyh.se">Henrik Nyh</a>.
+      %p
+        Last updated #{@updated_on.strftime("%b %d, %Y")}.
+        By <a href="http://henrik.nyh.se">Henrik Nyh</a>.
