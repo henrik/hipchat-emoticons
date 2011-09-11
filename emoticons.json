@@ -531,6 +531,41 @@
       "path": "zoidberg.png",
       "shortcut": "zoidberg",
       "width": "25"
+    },
+    {
+      "id": "189",
+      "height": "25",
+      "path": "badpokerface.png",
+      "shortcut": "badpokerface",
+      "width": "19"
+    },
+    {
+      "id": "190",
+      "height": "25",
+      "path": "notbad.png",
+      "shortcut": "notbad",
+      "width": "17"
+    },
+    {
+      "id": "191",
+      "height": "25",
+      "path": "pokerface.png",
+      "shortcut": "pokerface",
+      "width": "20"
+    },
+    {
+      "id": "192",
+      "height": "21",
+      "path": "philosoraptor.png",
+      "shortcut": "philosoraptor",
+      "width": "25"
+    },
+    {
+      "id": "193",
+      "height": "25",
+      "path": "samuel.png",
+      "shortcut": "samuel",
+      "width": "19"
     }
   ]
 }
