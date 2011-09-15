@@ -566,6 +566,13 @@
       "path": "samuel.png",
       "shortcut": "samuel",
       "width": "19"
+    },
+    {
+      "id": "197",
+      "height": "25",
+      "path": "fry.png",
+      "shortcut": "fry",
+      "width": "19"
     }
   ]
 }
