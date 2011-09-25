@@ -27,13 +27,14 @@ class Emoticon
   BASE_URL = "http://hipchat.com/img/emoticons/"
 
   def initialize(data, opts={})
+    @standard = opts[:standard]
+
     @id = data["id"]
     @path = data["path"]
     @shortcut = data["shortcut"]
+    @shortcut.sub!(/^\((.+)\)$/, '\1') unless @standard
     @width = data["width"].to_i
     @height = data["height"].to_i
-
-    @standard = opts[:standard]
   end
 
   def url

@@ -573,6 +573,20 @@
       "path": "fry.png",
       "shortcut": "fry",
       "width": "19"
+    },
+    {
+      "id": "203",
+      "height": "25",
+      "path": "chewy.png",
+      "shortcut": "chewie",
+      "width": "25"
+    },
+    {
+      "id": "205",
+      "height": "25",
+      "path": "(chompy).gif",
+      "shortcut": "(chompy)",
+      "width": "25"
     }
   ]
 }
