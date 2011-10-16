@@ -587,6 +587,27 @@
       "path": "(chompy).gif",
       "shortcut": "(chompy)",
       "width": "25"
+    },
+    {
+      "id": "221",
+      "height": "24",
+      "path": "pumpkin.png",
+      "shortcut": "pumpkin",
+      "width": "24"
+    },
+    {
+      "id": "222",
+      "height": "24",
+      "path": "ghost.png",
+      "shortcut": "ghost",
+      "width": "24"
+    },
+    {
+      "id": "223",
+      "height": "27",
+      "path": "candycorn.png",
+      "shortcut": "candycorn",
+      "width": "14"
     }
   ]
 }
