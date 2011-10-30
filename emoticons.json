@@ -608,6 +608,20 @@
       "path": "candycorn.png",
       "shortcut": "candycorn",
       "width": "14"
+    },
+    {
+      "id": "227",
+      "height": "25",
+      "path": "caruso.png",
+      "shortcut": "caruso",
+      "width": "37"
+    },
+    {
+      "id": "247",
+      "height": "25",
+      "path": "haveaseat.png",
+      "shortcut": "haveaseat",
+      "width": "18"
     }
   ]
 }
