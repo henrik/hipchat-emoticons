@@ -622,6 +622,13 @@
       "path": "haveaseat.png",
       "shortcut": "haveaseat",
       "width": "18"
+    },
+    {
+      "id": "252",
+      "height": "16",
+      "path": "scumbag.png",
+      "shortcut": "scumbag",
+      "width": "25"
     }
   ]
 }
