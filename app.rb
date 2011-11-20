@@ -10,12 +10,16 @@ require "json"
 set :haml, :format => :html5, :attr_wrapper => %{"}
 set :views, lambda { root }
 
+module Sorting
+  RECENT = "recent"
+end
+
 get '/' do
   # Cache in Varnish: http://devcenter.heroku.com/articles/http-caching
   headers 'Cache-Control' => 'public, max-age=3600'
 
   @standard_emoticons = standard_emoticons
-  @secret_emoticons = secret_emoticons
+  @secret_emoticons = secret_emoticons(params[:order])
   @updated_on = [ File.mtime("./emoticons.json"), File.mtime("./standard_emoticons.json") ].max
   haml :index
 end
@@ -45,18 +49,21 @@ class Emoticon
     @standard ? shortcut : "(#{shortcut})"
   end
 
-  def <=>(other)
-    self.shortcut <=> other.shortcut
-  end
-
 end
 
 def standard_emoticons
   emoticons_from_file("./standard_emoticons.json").map { |e| Emoticon.new(e, :standard => true) }
 end
 
-def secret_emoticons
-  emoticons_from_file("./emoticons.json").map { |e| Emoticon.new(e, :standard => false) }.sort
+def secret_emoticons(order)
+  emoticons = emoticons_from_file("./emoticons.json").map { |e| Emoticon.new(e, :standard => false) }
+  case order
+  when Sorting::RECENT
+    emoticons = emoticons.reverse
+  else  # Alphabetical.
+    emoticons = emoticons.sort_by { |x| x.shortcut }
+  end
+  emoticons
 end
 
 def emoticons_from_file(file)

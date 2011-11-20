@@ -34,6 +34,14 @@
         <a href="http://www.hipchat.com/r/2zt39">HipChat</a> emoticons.
         Click to copy.
 
+    %p
+      Order:
+      - case params[:order]
+      - when Sorting::RECENT
+        <a href="/">Alphabetical</a> &bull; <strong>Recently added</strong>
+      - else
+        <strong>Alphabetical</strong> &bull; <a href="/?order=recent">Recently added</a>
+
     #emoticons
       - [ @standard_emoticons, @secret_emoticons ].each do |emoticons|
         %p
