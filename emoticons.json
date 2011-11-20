@@ -78,13 +78,6 @@
       "width": "20"
     },
     {
-      "id": "26",
-      "path": "turkey.png",
-      "shortcut": "turkey",
-      "height": "17",
-      "width": "25"
-    },
-    {
       "id": "27",
       "path": "sadpanda.png",
       "shortcut": "sadpanda",
@@ -678,6 +671,20 @@
       "shortcut": "wat",
       "height": "25",
       "width": "25"
+    },
+    {
+      "id": "273",
+      "path": "turkey.png",
+      "shortcut": "turkey",
+      "height": "25",
+      "width": "22"
+    },
+    {
+      "id": "277",
+      "path": "skyrim.png",
+      "shortcut": "skyrim",
+      "height": "35",
+      "width": "19"
     }
   ]
 }
