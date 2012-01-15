@@ -2,22 +2,17 @@
 
 ## Updating emoticons.json:
 
-Log into the chat in a browser and look for a XHR request like
-https://accountname.hipchat.com/api/get_emoticons using a tool
-like the Chrome Web Inspector.
+Log into the chat in a browser by visiting
 
-That request will be made with certain group_id, user_id and token
-parameters. Make a ~/.hipchat-emoticons file containing e.g.
+  <https://hipchat.com/chat>
 
-    { "group_id": "12345", "user_id": "12345", "token": "F00" }
+and logging in if necessary.
 
-and then run
+Run this bookmarklet to get the info that the script needs. Copy it when prompted. It includes a token that expires in a short while.
 
-    rake
+    prompt("Copy this:", JSON.stringify( { token: app.token_info.token, group_id: util.jid.group_id(app.current_user_jid), user_id: util.jid.user_id(app.current_user_jid) } ))
 
-on the command line to update emoticons.json.
-
-Note that the token isn't very long-lived. Maybe an hour or two?
+Then run `rake`, pasting the copied text when prompted. Hit `Return`. This will update `emoticons.json`.
 
 ## Updating standard\_emoticons.json:
 
