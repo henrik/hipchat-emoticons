@@ -386,13 +386,6 @@
       "width": "25"
     },
     {
-      "id": "86",
-      "height": "7",
-      "path": "2002/hipster.png",
-      "shortcut": "hipster",
-      "width": "25"
-    },
-    {
       "id": "90",
       "height": "25",
       "path": "basket.png",
@@ -713,6 +706,13 @@
       "path": "orly.png",
       "shortcut": "orly",
       "width": "24"
+    },
+    {
+      "id": "311",
+      "height": "25",
+      "path": "hipster.png",
+      "shortcut": "hipster",
+      "width": "25"
     }
   ]
 }
