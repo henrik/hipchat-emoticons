@@ -5,17 +5,17 @@ require "json"
 
 BOOKMARKLET = 'prompt("Copy this:", JSON.stringify( { token: app.token_info.token, group_id: util.jid.group_id(app.current_user_jid), user_id: util.jid.user_id(app.current_user_jid) } ))'
 
-
-desc "Copies the bookmarklet to the pasteboard."
-task :bm do
-  `echo '#{BOOKMARKLET}' | pbcopy`
-  puts "Copied to clipboard."
-end
-
-desc "Updates emoticons.json. See README."
+desc "Updates emoticons.json."
 task :default do
 
-  print "Paste bookmarklet output: "
+  `echo '#{BOOKMARKLET}' | pbcopy`
+  puts "Copied bookmarklet to clipboard."
+
+  `open -g https://hipchat.com/chat`
+  puts "Opened chat in browser."
+  puts " * Log in if necessary."
+  puts " * Run the bookmarklet, copy its output."
+  print " * Paste bookmarklet output: "
   raw_json = gets()
 
   options = JSON.parse(raw_json)
