@@ -1,4 +1,4 @@
-require "open-uri"
+require "net/https"
 require "pp"
 require "rubygems"
 require "json"
@@ -18,11 +18,15 @@ task :default do
   print " * Paste bookmarklet output: "
   raw_json = gets()
 
-  options = JSON.parse(raw_json)
-  base_url = "https://www.hipchat.com/api/get_emoticons?group_id=%s&user_id=%s&token=%s&format=json"
-  url = base_url % options.values_at("group_id", "user_id", "token")
+  json = JSON.parse(raw_json)
+  json.merge!("format" => "json")
+  params = json.map { |k,v| "#{k}=#{v}" }.join("&")
 
-  data = open(url).read
+  http = Net::HTTP.new('www.hipchat.com', 443)
+  http.use_ssl = true
+  path = '/api/get_emoticons'
+  response, data = http.post(path, params, {})
+
   json = JSON.parse(data)
   pretty = JSON.pretty_generate(json)
 
