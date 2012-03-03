@@ -21,7 +21,7 @@ end
 
 
 class EmoticonFile
-  BY_RECENT    = "recent"
+  BY_RECENT = "recent"
 
   def self.standard
     self.new("./standard_emoticons.json", :standard => true)
