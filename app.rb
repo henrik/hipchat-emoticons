@@ -2,10 +2,8 @@
 # See README.
 
 require "rubygems"
-require "sinatra"
-require "haml"
-require "sass"
-require "json"
+require "bundler"
+Bundler.require :default, (ENV['RACK_ENV'] || "development").to_sym
 
 set :haml, :format => :html5, :attr_wrapper => %{"}
 set :views, lambda { root }
@@ -71,4 +69,3 @@ def emoticons_from_file(file)
   json = JSON.parse(raw)
   json["emoticon"]
 end
-
