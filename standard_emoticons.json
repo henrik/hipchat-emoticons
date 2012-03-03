@@ -3,7 +3,7 @@
     { "id": "0", "path": "smile.png", "shortcut": ":-)", "height": "18", "width": "18" },
     { "id": "0", "path": "gasp.png", "shortcut": ":o", "height": "18", "width": "18" },
     { "id": "0", "path": "moneymouth.png", "shortcut": ":$", "height": "18", "width": "18" },
-    { "id": "0", "path": "slant.png", "shortcut": ":", "height": "18", "width": "18" },
+    { "id": "0", "path": "slant.png", "shortcut": ":\\", "height": "18", "width": "18" },
     { "id": "0", "path": "frown.png", "shortcut": ":(", "height": "18", "width": "18" },
     { "id": "0", "path": "kiss.png", "shortcut": ":-*", "height": "18", "width": "18" },
     { "id": "0", "path": "footinmouth.png", "shortcut": ":#", "height": "18", "width": "18" },

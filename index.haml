@@ -37,7 +37,7 @@
     %p
       Order:
       - case params[:order]
-      - when Sorting::RECENT
+      - when EmoticonFile::BY_RECENT
         <a href="/">Alphabetical</a> &bull; <strong>Recently added or updated</strong>
       - else
         <strong>Alphabetical</strong> &bull; <a href="/?order=recent">Recently added or updated</a>
@@ -52,5 +52,5 @@
 
     %footer
       %p
-        Last updated #{@updated_on.strftime("%b %d, %Y")}.
+        Last updated #{@updated_at.strftime("%b %e, %Y")}.
         By <a href="http://henrik.nyh.se">Henrik Nyh</a>.
