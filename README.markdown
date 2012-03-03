@@ -14,7 +14,7 @@ See it here: <http://hipchat-emoticons.heroku.com>
 
 ## Updating emoticons.json
 
-Run `rake` and follows its instructions.
+Run `rake` and follow its instructions.
 
 The bookmarklet gets the info that the script needs. It includes a token that expires in a short while.
 
