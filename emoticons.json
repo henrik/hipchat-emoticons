@@ -1,13 +1,6 @@
 {
   "emoticon": [
     {
-      "id": "2",
-      "height": "25",
-      "path": "cholo.gif",
-      "shortcut": "cholo",
-      "width": "25"
-    },
-    {
       "id": "4",
       "height": "24",
       "path": "chris.png",
@@ -720,6 +713,13 @@
       "path": "fry.png",
       "shortcut": "fry",
       "width": "19"
+    },
+    {
+      "id": "350",
+      "height": "23",
+      "path": "dance.gif",
+      "shortcut": "dance",
+      "width": "26"
     }
   ]
 }
