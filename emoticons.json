@@ -720,6 +720,20 @@
       "path": "dance.gif",
       "shortcut": "dance",
       "width": "26"
+    },
+    {
+      "id": "353",
+      "height": "23",
+      "path": "atlassian.png",
+      "shortcut": "atlassian",
+      "width": "25"
+    },
+    {
+      "id": "361",
+      "height": "25",
+      "path": "hubspot.png",
+      "shortcut": "hubspot",
+      "width": "25"
     }
   ]
 }
