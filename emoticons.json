@@ -734,6 +734,13 @@
       "path": "hubspot.png",
       "shortcut": "hubspot",
       "width": "25"
+    },
+    {
+      "id": "369",
+      "height": "25",
+      "path": "drevil.png",
+      "shortcut": "drevil",
+      "width": "37"
     }
   ]
 }
