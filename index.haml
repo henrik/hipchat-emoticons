@@ -28,9 +28,7 @@
       %h1 HipChat emoticons
       %p
         A complete list of
-        <strong>#{@standard_emoticons.length}</strong> standard +
-        <strong>#{@secret_emoticons.length}</strong> secret =
-        <strong>#{@standard_emoticons.length+@secret_emoticons.length}</strong>
+        <strong>#{@emoticons.length}</strong>
         <a href="http://www.hipchat.com/r/2zt39">HipChat</a> emoticons.
         Click to copy.
 
@@ -43,12 +41,11 @@
         <strong>Alphabetical</strong> &bull; <a href="/?order=recent">Recently added or updated</a>
 
     #emoticons
-      - [ @standard_emoticons, @secret_emoticons ].each do |emoticons|
-        %p
-          - emoticons.each do |e|
-            %a{ :href => "##{e.string}", :onclick => %{ prompt("Copy this:", #{e.string.to_json}); return false;} }
-              %img{:alt => e.shortcut, :title => e.string,
-                :src => e.url, :style => "width:#{e.width}px; height:#{e.height}px" }
+      %p
+        - @emoticons.each do |e|
+          %a{ :href => "##{e.shortcut}", :onclick => %{ prompt("Copy this:", #{e.shortcut.to_json}); return false;} }
+            %img{:alt => e.shortcut, :title => e.shortcut,
+              :src => e.url, :style => "width:#{e.width}px; height:#{e.height}px" }
 
     %footer
       %p

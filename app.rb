@@ -1,6 +1,7 @@
 # By Henrik Nyh <henrik@nyh.se> 2011-07-27 under the MIT license.
 # See README.
 
+require "set"
 require "rubygems"
 require "bundler"
 Bundler.require :default, (ENV['RACK_ENV'] || "development").to_sym
@@ -13,39 +14,39 @@ get '/' do
   # Cache in Varnish: http://devcenter.heroku.com/articles/http-caching
   headers 'Cache-Control' => 'public, max-age=3600'
 
-  @standard_emoticons = EmoticonFile.standard.emoticons(params[:order])
-  @secret_emoticons   = EmoticonFile.secret.emoticons(params[:order])
-  @updated_at = [ EmoticonFile.standard.updated_at, EmoticonFile.secret.updated_at ].max
+  @file       = EmoticonFile.new
+  @emoticons  = @file.emoticons(params[:order])
+  @updated_at = @file.updated_at
   haml :index
 end
 
 
 class EmoticonFile
+
   BY_RECENT = "recent"
 
-  def self.standard
-    self.new("./standard_emoticons.json", :standard => true)
-  end
-
-  def self.secret
-    self.new("./emoticons.json", :standard => false)
-  end
-
-  def initialize(file, opts={})
-    @file = file
-    @standard = opts[:standard]
+  def initialize
+    @file = "./emoticons.json"
   end
 
   def emoticons(order=nil)
-    es = json.map { |e| Emoticon.new(e, :standard => @standard) }
-    if @standard
-      es  # Same order as in file.
-    else
-      if order == BY_RECENT
-        es.reverse
-      else  # Alphabetical.
-        es.sort_by { |x| x.shortcut }
+    es = json.map { |e| Emoticon.new(e) }
+
+    # The file can have duplicates, e.g. ":)" and ":-)". Only keep the first.
+    known_images = Set.new
+    es.reject! { |e|
+      if known_images.include?(e.path)
+        true
+      else
+        known_images << e.path
+        false
       end
+    }
+
+    if order == BY_RECENT
+      es.reverse
+    else  # Alphabetical.
+      es.sort_by { |x| x.shortcut }
     end
   end
 
@@ -58,33 +59,27 @@ class EmoticonFile
   def json
     raw = File.read(@file)
     json = JSON.parse(raw)
-    json["emoticon"]
   end
+
 end
 
 class Emoticon
   include Comparable
-  attr_reader :id, :shortcut, :path, :width, :height
+  attr_reader :shortcut, :path, :width, :height
 
-  BASE_URL = "http://hipchat.com/img/emoticons/"
+  BASE_URL = "https://dujrsrsgsd3nh.cloudfront.net/img/emoticons/"
 
   def initialize(data, opts={})
     @standard = opts[:standard]
 
-    @id       = data["id"]
-    @path     = data["path"]
+    @path     = data["image"]
     @width    = data["width"].to_i
     @height   = data["height"].to_i
     @shortcut = data["shortcut"]
-    @shortcut.sub!(/^\((.+)\)$/, '\1') unless @standard
   end
 
   def url
     URI.join(BASE_URL, @path)
-  end
-
-  def string
-    @standard ? shortcut : "(#{shortcut})"
   end
 
 end
