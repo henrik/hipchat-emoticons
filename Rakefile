@@ -1,4 +1,3 @@
-require "net/https"
 require "pp"
 require "rubygems"
 require "json"
