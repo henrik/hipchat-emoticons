@@ -964,5 +964,26 @@
     "width": "25",
     "regex": "\\(bitbucket\\)",
     "shortcut": "(bitbucket)"
+  },
+  {
+    "image": "tea.png",
+    "height": "24",
+    "width": "24",
+    "regex": "\\(tea\\)",
+    "shortcut": "(tea)"
+  },
+  {
+    "image": "awthanks.png",
+    "height": "30",
+    "width": "31",
+    "regex": "\\(awthanks\\)",
+    "shortcut": "(awthanks)"
+  },
+  {
+    "image": "indeed.png",
+    "height": "30",
+    "width": "24",
+    "regex": "\\(indeed\\)",
+    "shortcut": "(indeed)"
   }
 ]
