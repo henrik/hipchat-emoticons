@@ -1,14 +1,38 @@
 # By Henrik Nyh <henrik@nyh.se> 2011-07-27 under the MIT license.
 # See README.
 
-require "set"
+# Load requirements.
+
 require "rubygems"
 require "bundler"
 Bundler.require :default, (ENV['RACK_ENV'] || "development").to_sym
 
-set :haml, :format => :html5, :attr_wrapper => %{"}
-set :views, lambda { root }
 
+# Sass on Heroku.
+# https://devcenter.heroku.com/articles/using-sass
+# http://autonomousmachine.com/posts/2011/5/18/sass-and-sinatra-on-heroku
+
+require "sass/plugin/rack"
+use Sass::Plugin::Rack
+
+use Rack::Static,
+    urls: ['/stylesheets/'],
+    root: "tmp"
+
+Sass::Plugin.options.merge!(
+  template_location: '.',
+  css_location: 'tmp/stylesheets')
+
+
+# Configure.
+
+set :haml, format: :html5, attr_wrapper: %{"}
+set :views, -> { root }
+
+
+# Go!
+
+require "set"
 
 get '/' do
   # Cache in Varnish: http://devcenter.heroku.com/articles/http-caching
