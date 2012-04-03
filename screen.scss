@@ -1,12 +1,14 @@
 body {
-  margin: 0;
-  padding: 1em 2em;
-  max-width: 65em;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
   font-family: 'Varela Round', sans-serif;
+  text-align: center;
 }
 
 #emoticons {
   margin: 3em 0 2em;
+  text-align: left;
   a {
     display: inline-block;
     text-align: center;
