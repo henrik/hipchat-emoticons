@@ -16,6 +16,14 @@ body {
     height: 50px;
     padding: 8px;
     text-decoration: none;
+    &:hover {
+      transform: translate(0, -5px);
+      -moz-transform: translate(0, -5px);
+      -webkit-transform: translate(0, -5px);
+      .shortcut {
+        color: #333;
+      }
+    }
   }
   .shortcut {
     color: #BBB;
