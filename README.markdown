@@ -4,6 +4,13 @@ A Sinatra app running on Heroku.
 
 See it here: <http://hipchat-emoticons.heroku.com>
 
+Running the update script currently involves some manual work, so I update about
+once a week. Feel free to create an issue if you notice missing emoticons in between
+updates.
+
+Pull requests aren't necessary for new emoticons since there is a script, but
+other pull requests are very welcome.
+
 
 ## Running locally
 
