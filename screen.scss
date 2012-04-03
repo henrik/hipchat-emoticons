@@ -20,15 +20,20 @@ body {
       transform: translate(0, -5px);
       -moz-transform: translate(0, -5px);
       -webkit-transform: translate(0, -5px);
-      .shortcut {
-        color: #333;
-      }
     }
   }
-  .shortcut {
-    color: #BBB;
-    font-size: 8px;
-  }
+}
+
+.shortcut {
+  color: transparent;
+  font-size: 8px;
+}
+#emoticons:hover .shortcut {
+  color: #CCC;
+}
+
+#emoticons a:hover .shortcut {
+  color: #333;
 }
 
 footer {
