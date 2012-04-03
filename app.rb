@@ -20,7 +20,6 @@ get '/' do
   haml :index
 end
 
-
 class EmoticonFile
 
   BY_RECENT = "recent"

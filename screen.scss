@@ -4,13 +4,26 @@ body {
   max-width: 65em;
   font-family: 'Varela Round', sans-serif;
 }
+
 #emoticons {
   margin: 3em 0 2em;
   a {
     display: inline-block;
     text-align: center;
-    width: 41px;
-    height: 41px;
-    padding: 3px;
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    text-decoration: none;
+  }
+  .shortcut {
+    color: #BBB;
+    font-size: 8px;
+  }
+}
+
+footer {
+  p {
+    display: inline;
+    margin-left: 0.5em;
   }
 }

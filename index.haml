@@ -27,14 +27,16 @@
         <strong>Alphabetical</strong> &bull; <a href="/?order=recent">Recently added or updated</a>
 
     #emoticons
-      %p
-        - @emoticons.each do |e|
-          %a{ :href => "##{e.shortcut}", :onclick => %{ prompt("Copy this:", #{e.shortcut.to_json}); return false;} }
-            %img{ :alt => e.shortcut, :title => e.shortcut,
-              :src => e.url, :style => "width:#{e.width}px; height:#{e.height}px" }
+      - @emoticons.each do |e|
+        %a{ :href => "##{e.shortcut}", :onclick => %{ prompt("Copy this:", #{e.shortcut.to_json}); return false;} }
+          %img{ :alt => e.shortcut, :title => e.shortcut,
+            :src => e.url, :style => "width:#{e.width}px; height:#{e.height}px" }
+          .shortcut= e.shortcut
 
     %footer
       %p
         Last updated #{@updated_at.strftime("%b %e, %Y")}.
+      %p
         By <a href="http://henrik.nyh.se">Henrik Nyh</a>.
+      %p
         <a href="https://github.com/henrik/hipchat-emoticons">View source on GitHub</a>.
