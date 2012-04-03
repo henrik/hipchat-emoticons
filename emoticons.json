@@ -986,4 +986,11 @@
     "regex": "\\(indeed\\)",
     "shortcut": "(indeed)"
   }
+  {
+    "image": "badass.png",
+    "height": "25",
+    "width": "32",
+    "regex": "\\(badass\\)",
+    "shortcut": "(badass)"
+  }
 ]
