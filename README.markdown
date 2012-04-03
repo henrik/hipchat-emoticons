@@ -15,8 +15,8 @@ other pull requests are very welcome.
 ## Running locally
 
     bundle install
-    ruby app.rb
-    open http://localhost:4567
+    rackup
+    open http://localhost:9292
 
 
 ## Updating emoticons.json

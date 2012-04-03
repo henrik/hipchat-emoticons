@@ -6,21 +6,7 @@
     /[if lt IE 9]
       %script(src="//html5shim.googlecode.com/svn/trunk/html5.js")
     <link href='http://fonts.googleapis.com/css?family=Varela+Round&v2' rel='stylesheet' type='text/css'>
-    %style
-      :sass
-        body
-          margin: 0
-          padding: 1em 2em
-          max-width: 65em
-          font-family: 'Varela Round', sans-serif
-        #emoticons
-          margin: 3em 0 2em
-          a
-            display: inline-block
-            text-align: center
-            width: 41px
-            height: 41px
-            padding: 3px
+    %link(href="/screen.css" rel="stylesheet" type="text/css")
 
   %body
 
@@ -44,7 +30,7 @@
       %p
         - @emoticons.each do |e|
           %a{ :href => "##{e.shortcut}", :onclick => %{ prompt("Copy this:", #{e.shortcut.to_json}); return false;} }
-            %img{:alt => e.shortcut, :title => e.shortcut,
+            %img{ :alt => e.shortcut, :title => e.shortcut,
               :src => e.url, :style => "width:#{e.width}px; height:#{e.height}px" }
 
     %footer

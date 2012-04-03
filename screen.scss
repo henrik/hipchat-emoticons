@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 1em 2em;
+  max-width: 65em;
+  font-family: 'Varela Round', sans-serif;
+}
+#emoticons {
+  margin: 3em 0 2em;
+  a {
+    display: inline-block;
+    text-align: center;
+    width: 41px;
+    height: 41px;
+    padding: 3px;
+  }
+}
