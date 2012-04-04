@@ -16,8 +16,8 @@ require "sass/plugin/rack"
 use Sass::Plugin::Rack
 
 use Rack::Static,
-    urls: ['/stylesheets/'],
-    root: "tmp"
+  urls: ['/stylesheets/'],
+  root: "tmp"
 
 Sass::Plugin.options.merge!(
   template_location: '.',
@@ -30,9 +30,7 @@ set :haml, format: :html5, attr_wrapper: %{"}
 set :views, -> { root }
 
 
-# Go!
-
-require "set"
+# Control.
 
 get '/' do
   # Cache in Varnish: http://devcenter.heroku.com/articles/http-caching
@@ -43,6 +41,11 @@ get '/' do
   @updated_at = @file.updated_at
   haml :index
 end
+
+
+# Models.
+
+require "set"
 
 class EmoticonFile
 
@@ -56,20 +59,17 @@ class EmoticonFile
     es = json.map { |e| Emoticon.new(e) }
 
     # The file can have duplicates, e.g. ":)" and ":-)". Only keep the first.
-    known_images = Set.new
-    es.reject! { |e|
-      if known_images.include?(e.path)
-        true
-      else
-        known_images << e.path
-        false
-      end
-    }
+    known_paths = Set.new
+    uniques = []
+    es.each do |e|
+      uniques << e unless known_paths.include?(e.path)
+      known_paths << e.path
+    end
 
     if order == BY_RECENT
-      es.reverse
+      uniques.reverse
     else  # Alphabetical.
-      es.sort_by { |x| x.shortcut }
+      uniques.sort_by { |x| x.shortcut }
     end
   end
 
