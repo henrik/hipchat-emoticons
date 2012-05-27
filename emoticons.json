@@ -504,13 +504,6 @@
     "shortcut": "(sadtroll)"
   },
   {
-    "image": "gaytroll.gif",
-    "height": "25",
-    "width": "20",
-    "regex": "\\(gaytroll\\)",
-    "shortcut": "(gaytroll)"
-  },
-  {
     "image": "reddit.png",
     "height": "25",
     "width": "18",
