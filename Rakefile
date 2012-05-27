@@ -2,7 +2,8 @@ require "pp"
 require "rubygems"
 require "json"
 
-BOOKMARKLET = 'alert("Close this dialog and copy the URL, then go back to the terminal!"); location.hash = JSON.stringify(linkify.emoticons)'
+BOOKMARKLET = 'alert("Close this dialog and copy the URL, then go back to the terminal!"); re = new RegExp("^"+config.group_id+"/");' +
+              'es = linkify.emoticons.filter(function(x) { return !x.image.match(re) }); location.hash = JSON.stringify(es)'
 
 desc "Updates emoticons.json."
 task :default do
@@ -19,6 +20,7 @@ task :default do
   raw_json = `pbpaste`.split('#', 2).last
 
   json = JSON.parse(raw_json)
+
   pretty = JSON.pretty_generate(json)
 
   file = "emoticons.json"
