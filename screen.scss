@@ -6,12 +6,11 @@ body {
   text-align: center;
 }
 
-#emoticons {
+.emoticons {
   margin: 3em 0 2em;
-  text-align: left;
+  text-align: center;
   a {
     display: inline-block;
-    text-align: center;
     width: 50px;
     height: 50px;
     padding: 8px;
@@ -32,11 +31,11 @@ body {
   font-size: 8px;
 }
 
-#emoticons:hover .shortcut {
+.emoticons:hover .shortcut {
   color: #CCC;
 }
 
-#emoticons a:hover .shortcut {
+.emoticons a:hover .shortcut {
   color: #333;
 }
 

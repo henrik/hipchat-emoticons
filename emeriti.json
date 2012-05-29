@@ -1,0 +1,9 @@
+[
+  {
+    "image": "gaytroll.gif",
+    "height": "25",
+    "width": "20",
+    "regex": "\\(gaytroll\\)",
+    "shortcut": "(gaytroll)"
+  }
+]

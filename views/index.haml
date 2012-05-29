@@ -7,6 +7,8 @@
       %script(src="//html5shim.googlecode.com/svn/trunk/html5.js")
     <link href='http://fonts.googleapis.com/css?family=Varela+Round&v2' rel='stylesheet' type='text/css'>
     %link(href="/stylesheets/screen.css" rel="stylesheet" type="text/css")
+    %link(rel="shortcut icon"
+ href="/favicon.png")
 
   %body
 
@@ -26,12 +28,17 @@
       - else
         <strong>Alphabetical</strong> &bull; <a href="/?order=recent">Recently added or updated</a>
 
-    #emoticons
+    .emoticons
       - @emoticons.each do |e|
-        %a{ :href => "##{e.shortcut}", :onclick => %{ prompt("Copy this:", #{e.shortcut.to_json}); return false;} }
-          %img{ :alt => e.shortcut, :title => e.shortcut,
-            :src => e.url, :style => "width:#{e.width}px; height:#{e.height}px" }
-          .shortcut= e.shortcut
+        = partial :emoticon, :e => e
+
+    %h2 Emoticons emeriti
+
+    %p These emoticons were removed by HipChat, but you can <a href="https://hipchat.com/admin/emoticons">upload them as custom emoticons</a>.
+
+    .emoticons
+      - @emeriti.each do |e|
+        = partial :emoticon, :e => e
 
     %footer
       %p

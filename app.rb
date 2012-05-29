@@ -21,14 +21,12 @@ use Rack::Static,
 
 Sass::Plugin.options.merge!(
   template_location: '.',
-  css_location: 'tmp/stylesheets')
-
+  css_location: 'tmp/stylesheets'
+)
 
 # Configure.
 
 set :haml, format: :html5, attr_wrapper: %{"}
-set :views, -> { root }
-
 
 # Control.
 
@@ -36,10 +34,23 @@ get '/' do
   # Cache in Varnish: http://devcenter.heroku.com/articles/http-caching
   headers 'Cache-Control' => 'public, max-age=3600'
 
-  @file       = EmoticonFile.new
+  @file       = EmoticonFile.new("./emoticons.json")
   @emoticons  = @file.emoticons(params[:order])
+  @emeriti    = EmoticonFile.new("./emeriti.json", :emeriti => true).emoticons
   @updated_at = @file.updated_at
   haml :index
+end
+
+helpers do
+
+  def partial(template, locals={})
+    haml :"_#{template}", {}, locals
+  end
+
+end
+
+def emeriti
+  []
 end
 
 
@@ -51,12 +62,13 @@ class EmoticonFile
 
   BY_RECENT = "recent"
 
-  def initialize
-    @file = "./emoticons.json"
+  def initialize(file, opts={})
+    @file = file
+    @emeriti = opts[:emeriti]
   end
 
   def emoticons(order=nil)
-    es = json.map { |e| Emoticon.new(e) }
+    es = json.map { |e| Emoticon.new(e, :emeriti => @emeriti) }
 
     # The file can have duplicates, e.g. ":)" and ":-)". Only keep the first.
     known_paths = Set.new
@@ -91,18 +103,28 @@ class Emoticon
   attr_reader :shortcut, :path, :width, :height
 
   BASE_URL = "https://dujrsrsgsd3nh.cloudfront.net/img/emoticons/"
+  EMERITI_BASE_URL = "/emeriti/"
 
-  def initialize(data, opts={})
-    @standard = opts[:standard]
-
+  def initialize(data, opts)
     @path     = data["image"]
     @width    = data["width"].to_i
     @height   = data["height"].to_i
     @shortcut = data["shortcut"]
+    @emeriti  = opts[:emeriti]
   end
 
   def url
-    URI.join(BASE_URL, @path)
+    File.join(base_url, @path)
+  end
+
+  private
+
+  def base_url
+    if @emeriti
+      EMERITI_BASE_URL
+    else
+      BASE_URL
+    end
   end
 
 end
