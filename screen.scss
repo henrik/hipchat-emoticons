@@ -16,6 +16,9 @@ body {
     height: 50px;
     padding: 8px;
     text-decoration: none;
+    img {
+      border: none;
+    }
     &:hover {
       transform: translate(0, -5px);
       -moz-transform: translate(0, -5px);
