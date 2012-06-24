@@ -3,7 +3,8 @@ require "rubygems"
 require "json"
 
 BOOKMARKLET = 'alert("Close this dialog and copy the URL, then go back to the terminal!"); re = new RegExp("^"+config.group_id+"/");' +
-              'es = linkify.emoticons.filter(function(x) { return !x.image.match(re) }); location.hash = JSON.stringify(es)'
+              'es = linkify.emoticons.filter(function(x) { return !x.image.match(re) }).map(function(x) { delete x.regex; return x; });' +
+              'location.hash = JSON.stringify(es)'
 
 desc "Updates emoticons.json."
 task :default do

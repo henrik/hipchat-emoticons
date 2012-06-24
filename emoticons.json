@@ -1,188 +1,161 @@
 [
   {
-    "regex": ":D",
     "shortcut": ":D",
     "width": 18,
     "height": 18,
     "image": "bigsmile.png"
   },
   {
-    "regex": ":-D",
     "shortcut": ":-D",
     "width": 18,
     "height": 18,
     "image": "bigsmile.png"
   },
   {
-    "regex": ":o",
     "shortcut": ":o",
     "width": 18,
     "height": 18,
     "image": "gasp.png"
   },
   {
-    "regex": ":Z",
     "shortcut": ":Z",
     "width": 18,
     "height": 18,
     "image": "sealed.png"
   },
   {
-    "regex": ":p",
     "shortcut": ":p",
     "width": 18,
     "height": 18,
     "image": "tongue.png"
   },
   {
-    "regex": ";p",
     "shortcut": ";p",
     "width": 18,
     "height": 18,
     "image": "winktongue.gif"
   },
   {
-    "regex": "&gt;:-\\(",
     "shortcut": "&gt;:-(",
     "width": 18,
     "height": 18,
     "image": "angry.png"
   },
   {
-    "regex": "8\\)",
     "shortcut": "8)",
     "width": 18,
     "height": 18,
     "image": "cool.png"
   },
   {
-    "regex": "8-\\)",
     "shortcut": "8-)",
     "width": 18,
     "height": 18,
     "image": "cool.png"
   },
   {
-    "regex": ":'\\(",
     "shortcut": ":'(",
     "width": 18,
     "height": 18,
     "image": "cry.png"
   },
   {
-    "regex": ":\\(",
     "shortcut": ":(",
     "width": 18,
     "height": 18,
     "image": "frown.png"
   },
   {
-    "regex": ":#",
     "shortcut": ":#",
     "width": 18,
     "height": 18,
     "image": "footinmouth.png"
   },
   {
-    "regex": "\\(embarrassed\\)",
     "shortcut": "(embarrassed)",
     "width": 18,
     "height": 18,
     "image": "embarrassed.png"
   },
   {
-    "regex": ":'\\)",
     "shortcut": ":')",
     "width": 18,
     "height": 18,
     "image": "happytear.gif"
   },
   {
-    "regex": "O:\\)",
     "shortcut": "O:)",
     "width": 18,
     "height": 22,
     "image": "innocent.png"
   },
   {
-    "regex": ":-\\*",
     "shortcut": ":-*",
     "width": 18,
     "height": 18,
     "image": "kiss.png"
   },
   {
-    "regex": ":\\$",
     "shortcut": ":$",
     "width": 18,
     "height": 18,
     "image": "moneymouth.png"
   },
   {
-    "regex": "\\(oops\\)",
     "shortcut": "(oops)",
     "width": 18,
     "height": 18,
     "image": "oops.png"
   },
   {
-    "regex": ":\\\\",
     "shortcut": ":",
     "width": 18,
     "height": 18,
     "image": "slant.png"
   },
   {
-    "regex": ":\\)",
     "shortcut": ":)",
     "width": 18,
     "height": 18,
     "image": "smile.png"
   },
   {
-    "regex": ":-\\)",
     "shortcut": ":-)",
     "width": 18,
     "height": 18,
     "image": "smile.png"
   },
   {
-    "regex": "=\\)",
     "shortcut": "=)",
     "width": 18,
     "height": 18,
     "image": "smile.png"
   },
   {
-    "regex": ":-?\\|",
     "shortcut": ":|",
     "width": 18,
     "height": 18,
     "image": "straightface.png"
   },
   {
-    "regex": "\\(thumbsdown\\)",
     "shortcut": "(thumbsdown)",
     "width": 16,
     "height": 16,
     "image": "thumbs_down.png"
   },
   {
-    "regex": "\\(thumbsup\\)",
     "shortcut": "(thumbsup)",
     "width": 16,
     "height": 16,
     "image": "thumbs_up.png"
   },
   {
-    "regex": ";\\)",
     "shortcut": ";)",
     "width": 18,
     "height": 18,
     "image": "wink.png"
   },
   {
-    "regex": ";-\\)",
     "shortcut": ";-)",
     "width": 18,
     "height": 18,
@@ -192,805 +165,690 @@
     "image": "chris.png",
     "height": "24",
     "width": "24",
-    "regex": "\\(chris\\)",
     "shortcut": "(chris)"
   },
   {
     "image": "facepalm.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(facepalm\\)",
     "shortcut": "(facepalm)"
   },
   {
     "image": "garret.png",
     "height": "24",
     "width": "24",
-    "regex": "\\(garret\\)",
     "shortcut": "(garret)"
   },
   {
     "image": "krang.gif",
     "height": "16",
     "width": "16",
-    "regex": "\\(krang\\)",
     "shortcut": "(krang)"
   },
   {
     "image": "lolwut.png",
     "height": "16",
     "width": "12",
-    "regex": "\\(lolwut\\)",
     "shortcut": "(lolwut)"
   },
   {
     "image": "pete.png",
     "height": "24",
     "width": "24",
-    "regex": "\\(pete\\)",
     "shortcut": "(pete)"
   },
   {
     "image": "pirate.gif",
     "height": "18",
     "width": "18",
-    "regex": "\\(pirate\\)",
     "shortcut": "(pirate)"
   },
   {
     "image": "poo.png",
     "height": "21",
     "width": "23",
-    "regex": "\\(poo\\)",
     "shortcut": "(poo)"
   },
   {
     "image": "coffee.png",
     "height": "24",
     "width": "24",
-    "regex": "\\(coffee\\)",
     "shortcut": "(coffee)"
   },
   {
     "image": "beer.png",
     "height": "20",
     "width": "20",
-    "regex": "\\(beer\\)",
     "shortcut": "(beer)"
   },
   {
     "image": "sadpanda.png",
     "height": "16",
     "width": "18",
-    "regex": "\\(sadpanda\\)",
     "shortcut": "(sadpanda)"
   },
   {
     "image": "tree.png",
     "height": "24",
     "width": "24",
-    "regex": "\\(tree\\)",
     "shortcut": "(tree)"
   },
   {
     "image": "present.png",
     "height": "16",
     "width": "16",
-    "regex": "\\(present\\)",
     "shortcut": "(present)"
   },
   {
     "image": "rudolph.png",
     "height": "16",
     "width": "25",
-    "regex": "\\(rudolph\\)",
     "shortcut": "(rudolph)"
   },
   {
     "image": "santa.png",
     "height": "23",
     "width": "25",
-    "regex": "\\(santa\\)",
     "shortcut": "(santa)"
   },
   {
     "image": "kwanzaa.png",
     "height": "22",
     "width": "25",
-    "regex": "\\(kwanzaa\\)",
     "shortcut": "(kwanzaa)"
   },
   {
     "image": "menorah.png",
     "height": "25",
     "width": "23",
-    "regex": "\\(menorah\\)",
     "shortcut": "(menorah)"
   },
   {
     "image": "cornelius.png",
     "height": "22",
     "width": "25",
-    "regex": "\\(cornelius\\)",
     "shortcut": "(cornelius)"
   },
   {
     "image": "bumble.png",
     "height": "25",
     "width": "24",
-    "regex": "\\(bumble\\)",
     "shortcut": "(bumble)"
   },
   {
     "image": "rageguy.png",
     "height": "25",
     "width": "24",
-    "regex": "\\(rageguy\\)",
     "shortcut": "(rageguy)"
   },
   {
     "image": "troll.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(troll\\)",
     "shortcut": "(troll)"
   },
   {
     "image": "rageguy.png",
     "height": "25",
     "width": "24",
-    "regex": "\\(fu\\)",
     "shortcut": "(fu)"
   },
   {
     "image": "hipchat.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(hipchat\\)",
     "shortcut": "(hipchat)"
   },
   {
     "image": "yey.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(yey\\)",
     "shortcut": "(yey)"
   },
   {
     "image": "yuno.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(yuno\\)",
     "shortcut": "(yuno)"
   },
   {
     "image": "6/itsatrap.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(itsatrap\\)",
     "shortcut": "(itsatrap)"
   },
   {
     "image": "heart.png",
     "height": "16",
     "width": "16",
-    "regex": "\\(heart\\)",
     "shortcut": "(heart)"
   },
   {
     "image": "foreveralone.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(foreveralone\\)",
     "shortcut": "(foreveralone)"
   },
   {
     "image": "washington.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(washington\\)",
     "shortcut": "(washington)"
   },
   {
     "image": "lincoln.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(lincoln\\)",
     "shortcut": "(lincoln)"
   },
   {
     "image": "jobs.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(jobs\\)",
     "shortcut": "(jobs)"
   },
   {
     "image": "gtfo.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(gtfo\\)",
     "shortcut": "(gtfo)"
   },
   {
     "image": "gtfo.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(huh\\)",
     "shortcut": "(huh)"
   },
   {
     "image": "taft.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(taft\\)",
     "shortcut": "(taft)"
   },
   {
     "image": "gates.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(gates\\)",
     "shortcut": "(gates)"
   },
   {
     "image": "awyea.png",
     "height": "25",
     "width": "41",
-    "regex": "\\(awyeah\\)",
     "shortcut": "(awyeah)"
   },
   {
     "image": "cerealguy.png",
     "height": "25",
     "width": "24",
-    "regex": "\\(cereal\\)",
     "shortcut": "(cereal)"
   },
   {
     "image": "challengeaccepted.png",
     "height": "25",
     "width": "20",
-    "regex": "\\(challengeaccepted\\)",
     "shortcut": "(challengeaccepted)"
   },
   {
     "image": "content.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(content\\)",
     "shortcut": "(content)"
   },
   {
     "image": "dumbbitch.png",
     "height": "25",
     "width": "18",
-    "regex": "\\(dumb\\)",
     "shortcut": "(dumb)"
   },
   {
     "image": "lol.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(lol\\)",
     "shortcut": "(lol)"
   },
   {
     "image": "megusta.png",
     "height": "25",
     "width": "24",
-    "regex": "\\(megusta\\)",
     "shortcut": "(megusta)"
   },
   {
     "image": "okay.png",
     "height": "25",
     "width": "18",
-    "regex": "\\(okay\\)",
     "shortcut": "(okay)"
   },
   {
     "image": "omg.png",
     "height": "23",
     "width": "25",
-    "regex": "\\(omg\\)",
     "shortcut": "(omg)"
   },
   {
     "image": "sadtroll.png",
     "height": "20",
     "width": "25",
-    "regex": "\\(sadtroll\\)",
     "shortcut": "(sadtroll)"
   },
   {
     "image": "reddit.png",
     "height": "25",
     "width": "18",
-    "regex": "\\(reddit\\)",
     "shortcut": "(reddit)"
   },
   {
     "image": "seomoz.png",
     "height": "25",
     "width": "21",
-    "regex": "\\(seomoz\\)",
     "shortcut": "(seomoz)"
   },
   {
     "image": "shamrock.png",
     "height": "21",
     "width": "22",
-    "regex": "\\(shamrock\\)",
     "shortcut": "(shamrock)"
   },
   {
     "image": "greenbeer.png",
     "height": "20",
     "width": "20",
-    "regex": "\\(greenbeer\\)",
     "shortcut": "(greenbeer)"
   },
   {
     "image": "wtf.png",
     "height": "25",
     "width": "20",
-    "regex": "\\(wtf\\)",
     "shortcut": "(wtf)"
   },
   {
     "image": "ohcrap.png",
     "height": "21",
     "width": "25",
-    "regex": "\\(ohcrap\\)",
     "shortcut": "(ohcrap)"
   },
   {
     "image": "8071/mike.png",
     "height": "25",
     "width": "18",
-    "regex": "\\(arrington\\)",
     "shortcut": "(arrington)"
   },
   {
     "image": "fuckyeah.png",
     "height": "23",
     "width": "25",
-    "regex": "\\(fuckyeah\\)",
     "shortcut": "(fuckyeah)"
   },
   {
     "image": "basket.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(basket\\)",
     "shortcut": "(basket)"
   },
   {
     "image": "bunny.png",
     "height": "24",
     "width": "24",
-    "regex": "\\(bunny\\)",
     "shortcut": "(bunny)"
   },
   {
     "image": "cadbury.png",
     "height": "18",
     "width": "25",
-    "regex": "\\(cadbury\\)",
     "shortcut": "(cadbury)"
   },
   {
     "image": "chocobunny.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(chocobunny\\)",
     "shortcut": "(chocobunny)"
   },
   {
     "image": "zzz.gif",
     "height": "24",
     "width": "24",
-    "regex": "\\(zzz\\)",
     "shortcut": "(zzz)"
   },
   {
     "image": "ducreux.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(ducreux\\)",
     "shortcut": "(ducreux)"
   },
   {
     "image": "android.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(android\\)",
     "shortcut": "(android)"
   },
   {
     "image": "cake.png",
     "height": "24",
     "width": "24",
-    "regex": "\\(cake\\)",
     "shortcut": "(cake)"
   },
   {
     "image": "rebeccablack.png",
     "height": "25",
     "width": "20",
-    "regex": "\\(rebeccablack\\)",
     "shortcut": "(rebeccablack)"
   },
   {
     "image": "pbr.png",
     "height": "24",
     "width": "13",
-    "regex": "\\(pbr\\)",
     "shortcut": "(pbr)"
   },
   {
     "image": "dosequis.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(dosequis\\)",
     "shortcut": "(dosequis)"
   },
   {
     "image": "ilied.png",
     "height": "21",
     "width": "25",
-    "regex": "\\(ilied\\)",
     "shortcut": "(ilied)"
   },
   {
     "image": "jackie.png",
     "height": "25",
     "width": "41",
-    "regex": "\\(jackie\\)",
     "shortcut": "(jackie)"
   },
   {
     "image": "areyoukiddingme.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(areyoukiddingme\\)",
     "shortcut": "(areyoukiddingme)"
   },
   {
     "image": "sweetjesus.png",
     "height": "24",
     "width": "25",
-    "regex": "\\(sweetjesus\\)",
     "shortcut": "(sweetjesus)"
   },
   {
     "image": "farnsworth.png",
     "height": "23",
     "width": "25",
-    "regex": "\\(goodnews\\)",
     "shortcut": "(goodnews)"
   },
   {
     "image": "10678/kennypowers.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(kennypowers\\)",
     "shortcut": "(kennypowers)"
   },
   {
     "image": "disapproval.png",
     "height": "18",
     "width": "23",
-    "regex": "\\(disapproval\\)",
     "shortcut": "(disapproval)"
   },
   {
     "image": "zoidberg.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(zoidberg\\)",
     "shortcut": "(zoidberg)"
   },
   {
     "image": "badpokerface.png",
     "height": "25",
     "width": "19",
-    "regex": "\\(badpokerface\\)",
     "shortcut": "(badpokerface)"
   },
   {
     "image": "notbad.png",
     "height": "25",
     "width": "17",
-    "regex": "\\(notbad\\)",
     "shortcut": "(notbad)"
   },
   {
     "image": "pokerface.png",
     "height": "25",
     "width": "20",
-    "regex": "\\(pokerface\\)",
     "shortcut": "(pokerface)"
   },
   {
     "image": "philosoraptor.png",
     "height": "21",
     "width": "25",
-    "regex": "\\(philosoraptor\\)",
     "shortcut": "(philosoraptor)"
   },
   {
     "image": "samuel.png",
     "height": "25",
     "width": "19",
-    "regex": "\\(samuel\\)",
     "shortcut": "(samuel)"
   },
   {
     "image": "chewy.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(chewie\\)",
     "shortcut": "(chewie)"
   },
   {
     "image": "pumpkin.png",
     "height": "24",
     "width": "24",
-    "regex": "\\(pumpkin\\)",
     "shortcut": "(pumpkin)"
   },
   {
     "image": "ghost.png",
     "height": "24",
     "width": "24",
-    "regex": "\\(ghost\\)",
     "shortcut": "(ghost)"
   },
   {
     "image": "candycorn.png",
     "height": "27",
     "width": "14",
-    "regex": "\\(candycorn\\)",
     "shortcut": "(candycorn)"
   },
   {
     "image": "caruso.png",
     "height": "25",
     "width": "37",
-    "regex": "\\(caruso\\)",
     "shortcut": "(caruso)"
   },
   {
     "image": "haveaseat.png",
     "height": "25",
     "width": "18",
-    "regex": "\\(haveaseat\\)",
     "shortcut": "(haveaseat)"
   },
   {
     "image": "scumbag.png",
     "height": "16",
     "width": "25",
-    "regex": "\\(scumbag\\)",
     "shortcut": "(scumbag)"
   },
   {
     "image": "yodawg.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(yodawg\\)",
     "shortcut": "(yodawg)"
   },
   {
     "image": "truestory.png",
     "height": "27",
     "width": "29",
-    "regex": "\\(truestory\\)",
     "shortcut": "(truestory)"
   },
   {
     "image": "derp.png",
     "height": "27",
     "width": "25",
-    "regex": "\\(derp\\)",
     "shortcut": "(derp)"
   },
   {
     "image": "stare.png",
     "height": "25",
     "width": "34",
-    "regex": "\\(stare\\)",
     "shortcut": "(stare)"
   },
   {
     "image": "allthethings.png",
     "height": "30",
     "width": "36",
-    "regex": "\\(allthethings\\)",
     "shortcut": "(allthethings)"
   },
   {
     "image": "freddie.png",
     "height": "35",
     "width": "17",
-    "regex": "\\(freddie\\)",
     "shortcut": "(freddie)"
   },
   {
     "image": "wat.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(wat\\)",
     "shortcut": "(wat)"
   },
   {
     "image": "turkey.png",
     "height": "25",
     "width": "22",
-    "regex": "\\(turkey\\)",
     "shortcut": "(turkey)"
   },
   {
     "image": "skyrim.png",
     "height": "35",
     "width": "19",
-    "regex": "\\(skyrim\\)",
     "shortcut": "(skyrim)"
   },
   {
     "image": "dealwithit.gif",
     "height": "22",
     "width": "35",
-    "regex": "\\(dealwithit\\)",
     "shortcut": "(dealwithit)"
   },
   {
     "image": "fap.png",
     "height": "25",
     "width": "19",
-    "regex": "\\(fap\\)",
     "shortcut": "(fap)"
   },
   {
     "image": "nothingtodohere.png",
     "height": "25",
     "width": "16",
-    "regex": "\\(nothingtodohere\\)",
     "shortcut": "(nothingtodohere)"
   },
   {
     "image": "orly.png",
     "height": "24",
     "width": "24",
-    "regex": "\\(orly\\)",
     "shortcut": "(orly)"
   },
   {
     "image": "hipster.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(hipster\\)",
     "shortcut": "(hipster)"
   },
   {
     "image": "ashton.png",
     "height": "25",
     "width": "21",
-    "regex": "\\(ashton\\)",
     "shortcut": "(ashton)"
   },
   {
     "image": "chompy.gif",
     "height": "25",
     "width": "25",
-    "regex": "\\(chompy\\)",
     "shortcut": "(chompy)"
   },
   {
     "image": "fry.png",
     "height": "25",
     "width": "19",
-    "regex": "\\(fry\\)",
     "shortcut": "(fry)"
   },
   {
     "image": "dance.gif",
     "height": "23",
     "width": "26",
-    "regex": "\\(dance\\)",
     "shortcut": "(dance)"
   },
   {
     "image": "atlassian.png",
     "height": "23",
     "width": "25",
-    "regex": "\\(atlassian\\)",
     "shortcut": "(atlassian)"
   },
   {
     "image": "hubspot.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(hubspot\\)",
     "shortcut": "(hubspot)"
   },
   {
     "image": "drevil.png",
     "height": "25",
     "width": "37",
-    "regex": "\\(drevil\\)",
     "shortcut": "(drevil)"
   },
   {
     "image": "boom.gif",
     "height": "23",
     "width": "25",
-    "regex": "\\(boom\\)",
     "shortcut": "(boom)"
   },
   {
     "image": "ohgodwhy.jpeg",
     "height": "25",
     "width": "25",
-    "regex": "\\(ohgodwhy\\)",
     "shortcut": "(ohgodwhy)"
   },
   {
     "image": "ceilingcat.png",
     "height": "14",
     "width": "25",
-    "regex": "\\(ceilingcat\\)",
     "shortcut": "(ceilingcat)"
   },
   {
     "image": "pingpong.png",
     "height": "22",
     "width": "25",
-    "regex": "\\(pingpong\\)",
     "shortcut": "(pingpong)"
   },
   {
     "image": "bitbucket.png",
     "height": "25",
     "width": "25",
-    "regex": "\\(bitbucket\\)",
     "shortcut": "(bitbucket)"
   },
   {
     "image": "tea.png",
     "height": "24",
     "width": "24",
-    "regex": "\\(tea\\)",
     "shortcut": "(tea)"
   },
   {
     "image": "awthanks.png",
     "height": "30",
     "width": "31",
-    "regex": "\\(awthanks\\)",
     "shortcut": "(awthanks)"
   },
   {
     "image": "indeed.png",
     "height": "30",
     "width": "24",
-    "regex": "\\(indeed\\)",
     "shortcut": "(indeed)"
   },
   {
     "image": "badass.png",
     "height": "25",
     "width": "32",
-    "regex": "\\(badass\\)",
     "shortcut": "(badass)"
   },
   {
     "image": "ninja.png",
     "height": "18",
     "width": "18",
-    "regex": "\\(ninja\\)",
     "shortcut": "(ninja)"
   }
 ]
