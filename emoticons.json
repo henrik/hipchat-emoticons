@@ -856,5 +856,23 @@
     "height": "25",
     "width": "19",
     "shortcut": "(notsureif)"
+  },
+  {
+    "image": "fwp-1342647892.png",
+    "height": "25",
+    "width": "30",
+    "shortcut": "(fwp)"
+  },
+  {
+    "image": "firstworldproblem-1342647915.png",
+    "height": "25",
+    "width": "30",
+    "shortcut": "(firstworldproblem)"
+  },
+  {
+    "image": "chucknorris-1342735388.png",
+    "height": "25",
+    "width": "25",
+    "shortcut": "(chucknorris)"
   }
 ]
