@@ -2,7 +2,7 @@
 
 A Sinatra app running on Heroku.
 
-See it here: <http://hipchat-emoticons.heroku.com>
+See it here: <http://hipchat-emoticons.nyh.name>
 
 Running the update script currently involves some manual work, so I update about
 once a week. Feel free to create an issue if you notice missing emoticons in between
