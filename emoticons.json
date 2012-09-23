@@ -874,5 +874,23 @@
     "height": "25",
     "width": "24",
     "shortcut": "(notsureifgusta)"
+  },
+  {
+    "image": "twss-1348262400.png",
+    "height": "25",
+    "width": "20",
+    "shortcut": "(twss)"
+  },
+  {
+    "image": "success-1348262443.png",
+    "height": "25",
+    "width": "25",
+    "shortcut": "(success)"
+  },
+  {
+    "image": "iseewhatyoudidthere-1348262983.png",
+    "height": "25",
+    "width": "28",
+    "shortcut": "(iseewhatyoudidthere)"
   }
 ]
