@@ -810,12 +810,6 @@
     "shortcut": "(pingpong)"
   },
   {
-    "image": "bitbucket.png",
-    "height": "25",
-    "width": "25",
-    "shortcut": "(bitbucket)"
-  },
-  {
     "image": "tea.png",
     "height": "24",
     "width": "24",
@@ -898,5 +892,35 @@
     "height": "30",
     "width": "17",
     "shortcut": "(gangnamstyle)"
+  },
+  {
+    "image": "shrug-1349463255.png",
+    "height": "12",
+    "width": "56",
+    "shortcut": "(shrug)"
+  },
+  {
+    "image": "tableflip-1349463264.png",
+    "height": "13",
+    "width": "109",
+    "shortcut": "(tableflip)"
+  },
+  {
+    "image": "cerealspit-1349463282.png",
+    "height": "24",
+    "width": "41",
+    "shortcut": "(cerealspit)"
+  },
+  {
+    "image": "bitbucket-1349806629.png",
+    "height": "25",
+    "width": "25",
+    "shortcut": "(bitbucket)"
+  },
+  {
+    "image": "jira-1350074257.png",
+    "height": "23",
+    "width": "18",
+    "shortcut": "(jira)"
   }
 ]
