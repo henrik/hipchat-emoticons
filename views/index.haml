@@ -7,10 +7,8 @@
       %script(src="//html5shim.googlecode.com/svn/trunk/html5.js")
     <link href='http://fonts.googleapis.com/css?family=Varela+Round&v2' rel='stylesheet' type='text/css'>
     %link(href="/stylesheets/screen.css" rel="stylesheet" type="text/css")
-    %link(rel="shortcut icon" href="/favicon.png")
-    %script(src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js")
-    %script(src="/javascript/jquery.zclip.js")
-    %script(src="/javascript/script.js")
+    %link(rel="shortcut icon"
+ href="/favicon.png")
 
   %body
 
@@ -29,8 +27,6 @@
         <a href="/">Alphabetical</a> &bull; <strong>Recently added or updated</strong>
       - else
         <strong>Alphabetical</strong> &bull; <a href="/?order=recent">Recently added or updated</a>
-
-    %p#copyResult
 
     .emoticons
       - @emoticons.each do |e|
