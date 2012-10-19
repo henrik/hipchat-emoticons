@@ -1,4 +1,4 @@
-%a{ :href => "##{e.shortcut}", :onclick => %{ prompt("Copy this:", #{e.shortcut.to_json}); return false;} }
+%a{ :href => "##{e.shortcut}", :class => 'copy' }
   %img{ :alt => e.shortcut, :title => e.shortcut,
     :src => e.url, :style => "width:#{e.width}px; height:#{e.height}px" }
   .shortcut= e.shortcut
