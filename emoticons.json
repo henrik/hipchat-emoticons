@@ -922,5 +922,17 @@
     "height": "23",
     "width": "18",
     "shortcut": "(jira)"
+  },
+  {
+    "image": "obama-1352231289.png",
+    "height": "25",
+    "width": "33",
+    "shortcut": "(obama)"
+  },
+  {
+    "image": "romney-1352231355.png",
+    "height": "25",
+    "width": "25",
+    "shortcut": "(romney)"
   }
 ]
