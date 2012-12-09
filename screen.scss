@@ -1,14 +1,32 @@
+$blue: rgb(0, 182, 253);
+
 body {
   margin: 0 auto;
   padding: 20px;
-  max-width: 1200px;
-  font-family: 'Varela Round', sans-serif;
+  max-width: 1600px;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333;
   text-align: center;
 }
 
+h1,
+h2,
+strong {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+a, a:visited {
+  color: $blue;
+}
+
 .emoticons {
-  margin: 3em 0 2em;
-  text-align: center;
+  margin: 50px 0 30px;
   a {
     display: inline-block;
     min-width: 50px;
@@ -27,12 +45,17 @@ body {
 }
 
 .shortcut {
-  color: transparent;
-  font-size: 8px;
+  font-size: 9px;
+  color: #BBB;
+  font-weight: 400;
+}
+
+.shortcut {
+  visibility: hidden;
 }
 
 .emoticons:hover .shortcut {
-  color: #CCC;
+  visibility: visible;
 }
 
 .emoticons a:hover .shortcut {
@@ -42,6 +65,7 @@ body {
 footer {
   p {
     display: inline;
-    margin-left: 0.5em;
+    margin-left: 4px;
+    &:first-child { margin-left: 0; }
   }
 }

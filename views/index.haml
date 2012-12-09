@@ -21,12 +21,11 @@
         Click to copy.
 
     %p
-      Order:
       - case params[:order]
       - when EmoticonFile::BY_RECENT
-        <a href="/">Alphabetical</a> &bull; <strong>Recently added or updated</strong>
+        <a href="/">alphabetical</a> / <strong>by recently added or updated</strong>
       - else
-        <strong>Alphabetical</strong> &bull; <a href="/?order=recent">Recently added or updated</a>
+        <strong>alphabetical</strong> / <a href="/?order=recent">by recently added or updated</a>
 
     .emoticons
       - @emoticons.each do |e|
