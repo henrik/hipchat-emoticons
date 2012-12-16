@@ -25,8 +25,15 @@ a, a:visited {
   color: $blue;
 }
 
+.filter-form {
+  margin: 30px 0;
+}
+
 .emoticons {
   margin: 50px 0 30px;
+}
+
+.emoticons {
   a {
     display: inline-block;
     min-width: 50px;

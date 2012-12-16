@@ -27,7 +27,7 @@
       - else
         <strong>alphabetical</strong> / <a href="/?order=recent">by recently added or updated</a>
 
-    %form
+    %form.filter-form
       :javascript
         var shortcuts = #{@all_emoticons.map(&:shortcut)};
 
