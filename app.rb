@@ -37,6 +37,7 @@ get '/' do
   @file       = EmoticonFile.new("./emoticons.json")
   @emoticons  = @file.emoticons(params[:order])
   @emeriti    = EmoticonFile.new("./emeriti.json", :emeriti => true).emoticons
+  @all_emoticons = @emoticons + @emeriti
   @updated_at = @file.updated_at
   haml :index
 end
@@ -126,5 +127,4 @@ class Emoticon
       BASE_URL
     end
   end
-
 end
