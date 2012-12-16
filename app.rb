@@ -43,11 +43,13 @@ get '/' do
 end
 
 helpers do
-
   def partial(template, locals={})
     haml :"_#{template}", {}, locals
   end
 
+  def h(text)
+    Rack::Utils.escape_html(text)
+  end
 end
 
 def emeriti
