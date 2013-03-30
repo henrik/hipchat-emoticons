@@ -38,8 +38,7 @@ $(function() {
 
   clip.on("load", function() {
     $(".emoticon").hover(function() {
-      var text = $(this).data("shortcut");
-      clip.setText(text);
+      clip.setText($(this).data("shortcut"));
       clip.glue(this);
     });
   });
@@ -47,6 +46,7 @@ $(function() {
   clip.on("complete", function(client, args) {
     notify("Copied " + args.text);
     // Let the browser steal back focus from Flash. Can't say I'm not proud ;p
+    // http://stackoverflow.com/questions/938403/keyboard-focus-being-stolen-by-flash
     $("<input>").css({opacity: 0}).appendTo(this).focus().remove();
   });
 
