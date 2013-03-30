@@ -12,31 +12,30 @@ $(function() {
 
 
   // Clipboard.
+  //
+  // Plugins like FlashBlock won't trigger "no Flash" detection, so we use
+  // a `clip.flashActuallyWorks = true` value instead.
+  //
+  // If only the clip handles hover/blur effects, the effect appears sluggish.
+  // If both the clip and the actual element handle them, it jumps as focus shifts.
+  // A slight timeout removes that jump.
 
-  var clip = new ZeroClipboard(null, {
-    moviePath: "/ZeroClipboard.swf",
-    hoverClass: "hover"
+  var clip = new ZeroClipboard(null, { moviePath: "/ZeroClipboard.swf" });
+
+  $(".emoticon").hover(hover, blur);
+  clip.on("mouseover", hover);
+  clip.on("mouseout", blur);
+
+  $(".emoticon").click(function() {
+    if (!clip.flashActuallyWorks) {
+      prompt("Copy this:", $(this).data("shortcut"));
+    }
+    return false;
   });
 
-  var handledMissingFlash = false;
-
-  clip.on("noflash", handleMissingFlash);
-  clip.on("wrongflash", handleMissingFlash);
-
-  function handleMissingFlash() {
-    // Only run once.
-    if (handledMissingFlash) return;
-    else handledMissingFlash = true;
-
-    $(".emoticon").hover(function() {
-      $(this).toggleClass("hover");
-    }).click(function() {
-      prompt("Copy this:", $(this).data("shortcut"));
-      return false;
-    });
-  }
-
   clip.on("load", function() {
+    clip.flashActuallyWorks = true;
+
     $(".emoticon").hover(function() {
       clip.setText($(this).data("shortcut"));
       clip.glue(this);
@@ -49,6 +48,19 @@ $(function() {
     // http://stackoverflow.com/questions/938403/keyboard-focus-being-stolen-by-flash
     $("<input>").css({opacity: 0}).appendTo(this).focus().remove();
   });
+
+  function hover() {
+    clearTimeout(this.hoverTimeout);
+    $(this).addClass("hover");
+  }
+
+  function blur() {
+    this.hoverTimeout = setTimeout($.proxy(actuallyBlur, this), 10);
+  }
+
+  function actuallyBlur() {
+    $(this).removeClass("hover");
+  }
 
 
   // Filter.
