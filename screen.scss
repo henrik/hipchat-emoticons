@@ -45,36 +45,33 @@ a.emoticon {
 }
 
 .emoticon {
-  &:hover {
+  // Can't use :hover because of ZeroClipboard.
+  &.hover {
     transform: translate(0, -5px);
     -moz-transform: translate(0, -5px);
     -webkit-transform: translate(0, -5px);
   }
-}
 
-.emoticon {
   &.filtered-out {
     opacity: 0.07;
   }
+
+  .shortcut {
+    font-size: 9px;
+    color: #BBB;
+    font-weight: 400;
+  }
 }
 
-.shortcut {
-  font-size: 9px;
-  color: #BBB;
-  font-weight: 400;
-}
-
-.shortcut {
-  visibility: hidden;
-}
-
-.emoticons:hover .shortcut,
-.emoticons.filtering .shortcut {
-  visibility: visible;
-}
-
-.emoticons a:hover .shortcut {
-  color: #333;
+.notification {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 footer {

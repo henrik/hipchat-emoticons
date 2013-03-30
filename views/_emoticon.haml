@@ -1,5 +1,4 @@
-%a.emoticon{ :href => "##{e.shortcut}",
-  :onclick => %{ prompt("Copy this:", #{e.shortcut.to_json}); return false;} }
+%a.emoticon{ :href => "##{e.shortcut}", :"data-shortcut" => e.shortcut }
 
   %img{ :alt => e.shortcut,
     :title => e.shortcut,
