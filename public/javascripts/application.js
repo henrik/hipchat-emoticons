@@ -18,14 +18,23 @@ $(function() {
     hoverClass: "hover"
   });
 
-  clip.on("noflash", function() {
+  var handledMissingFlash = false;
+
+  clip.on("noflash", handleMissingFlash);
+  clip.on("wrongflash", handleMissingFlash);
+
+  function handleMissingFlash() {
+    // Only run once.
+    if (handledMissingFlash) return;
+    else handledMissingFlash = true;
+
     $(".emoticon").hover(function() {
       $(this).toggleClass("hover");
     }).click(function() {
       prompt("Copy this:", $(this).data("shortcut"));
       return false;
     });
-  });
+  }
 
   clip.on("load", function() {
     $(".emoticon").hover(function() {
