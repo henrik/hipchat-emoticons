@@ -10,7 +10,7 @@ BOOKMARKLET = 'alert("Close this dialog and copy the URL, then go back to the te
 desc "Updates emoticons.json."
 task :default do
 
-  `echo '#{BOOKMARKLET}' | pbcopy`
+  IO.popen("pbcopy", "w") { |f| f << BOOKMARKLET }
   puts "Copied bookmarklet to clipboard."
 
   `open -g https://hipchat.com/chat`
