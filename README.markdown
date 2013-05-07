@@ -4,12 +4,15 @@ A Sinatra app running on Heroku.
 
 See it here: <http://hipchat-emoticons.nyh.name>
 
-Running the update script currently involves some manual work, so I update about
-once a week. Feel free to create an issue if you notice missing emoticons in between
-updates.
+## Noticed an unlisted emoticon?
 
-Pull requests aren't necessary for new emoticons since there is a script, but
-other pull requests are very welcome.
+There is an update script to update the emoticon set. The process is semi-manual, so I run it about once a week.
+
+If you notice new emoticons, feel free to [create a GitHub *issue*](https://github.com/henrik/hipchat-emoticons/issues/new) or [ping me on Twitter](http://twitter.com/henrik) and I'll probably update sooner.
+
+*Pull requests* for new emoticons aren't necessary since I'll just use the update script.
+
+Pull requests for other things are of course very welcome.
 
 
 ## Running locally
