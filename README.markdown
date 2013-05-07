@@ -1,4 +1,4 @@
-## HipChat emoticons
+# HipChat emoticons
 
 A Sinatra app running on Heroku.
 
