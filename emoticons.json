@@ -970,5 +970,35 @@
     "height": "29",
     "width": "25",
     "shortcut": "(clarence)"
+  },
+  {
+    "image": "branch-1369948509.png",
+    "height": "16",
+    "width": "16",
+    "shortcut": "(branch)"
+  },
+  {
+    "image": "continue-1369948567.png",
+    "height": "16",
+    "width": "16",
+    "shortcut": "(continue)"
+  },
+  {
+    "image": "failed-1369948578.png",
+    "height": "16",
+    "width": "16",
+    "shortcut": "(failed)"
+  },
+  {
+    "image": "successful-1369948592.png",
+    "height": "16",
+    "width": "16",
+    "shortcut": "(successful)"
+  },
+  {
+    "image": "unknown-1369948620.png",
+    "height": "16",
+    "width": "16",
+    "shortcut": "(unknown)"
   }
 ]
