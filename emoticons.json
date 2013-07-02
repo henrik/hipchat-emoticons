@@ -972,12 +972,6 @@
     "shortcut": "(clarence)"
   },
   {
-    "image": "branch-1369948509.png",
-    "height": "16",
-    "width": "16",
-    "shortcut": "(branch)"
-  },
-  {
     "image": "continue-1369948567.png",
     "height": "16",
     "width": "16",
@@ -1000,5 +994,11 @@
     "height": "16",
     "width": "16",
     "shortcut": "(unknown)"
+  },
+  {
+    "image": "branch-1372171579.png",
+    "height": "16",
+    "width": "16",
+    "shortcut": "(branch)"
   }
 ]
