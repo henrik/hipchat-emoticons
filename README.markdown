@@ -17,6 +17,8 @@ Pull requests for other things are of course very welcome.
 
 ## Running locally
 
+Make sure you're running Ruby 1.9 or better.
+
     bundle install
     rackup
     open http://localhost:9292
