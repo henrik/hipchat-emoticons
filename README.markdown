@@ -15,6 +15,13 @@ If you notice new emoticons, feel free to [create a GitHub *issue*](https://gith
 Pull requests for other things are of course very welcome.
 
 
+## Want to request a new emoticon?
+
+This site just lists the emoticons that HipChat supports. Contact them if you want to suggest additions.
+
+Or you can [upload custom emoticons](https://hipchat.com/admin/emoticons) that only work on your account.
+
+
 ## Running locally
 
 Make sure you're running Ruby 1.9 or better.
