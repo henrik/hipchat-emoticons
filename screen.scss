@@ -75,8 +75,7 @@ a.emoticon {
 }
 
 footer {
-  p {
-    display: inline;
+  .footer-part {
     margin-left: 4px;
     &:first-child { margin-left: 0; }
   }

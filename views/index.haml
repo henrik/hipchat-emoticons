@@ -50,14 +50,10 @@
 
     %footer
       %p
-        Last updated #{@updated_at.strftime("%b %e, %Y")}.
+        %span.footer-part Not affiliated with Atlassian HipChat.
+        %span.footer-part Emoticon requests, questions or complaints? <a href="help.hipchat.com/">Contact HipChat</a>.
 
       %p
-        Not affiliated with Atlassian HipChat.
-        Emoticon requests, questions or complaints? <a href="help.hipchat.com/">Contact HipChat</a>.
-
-      %p
-        This site is by <a href="http://henrik.nyh.se">Henrik Nyh</a>.
-
-      %p
-        <a href="https://github.com/henrik/hipchat-emoticons">View source on GitHub</a>.
+        %span.footer-part Last updated #{@updated_at.strftime("%b %e, %Y")}.
+        %span.footer-part This site is by <a href="http://henrik.nyh.se">Henrik Nyh</a>.
+        %span.footer-part <a href="https://github.com/henrik/hipchat-emoticons">View source on GitHub</a>.
