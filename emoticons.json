@@ -348,18 +348,6 @@
     "shortcut": "(jobs)"
   },
   {
-    "image": "gtfo.png",
-    "height": "25",
-    "width": "25",
-    "shortcut": "(gtfo)"
-  },
-  {
-    "image": "gtfo.png",
-    "height": "25",
-    "width": "25",
-    "shortcut": "(huh)"
-  },
-  {
     "image": "taft.png",
     "height": "25",
     "width": "25",
@@ -1006,5 +994,17 @@
     "height": "26",
     "width": "33",
     "shortcut": "(badjokeeel)"
+  },
+  {
+    "image": "gtfo-1381428639.png",
+    "height": "25",
+    "width": "25",
+    "shortcut": "(gtfo)"
+  },
+  {
+    "image": "huh-1381428657.png",
+    "height": "25",
+    "width": "25",
+    "shortcut": "(huh)"
   }
 ]
