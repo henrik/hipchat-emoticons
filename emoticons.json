@@ -696,12 +696,6 @@
     "shortcut": "(wat)"
   },
   {
-    "image": "turkey.png",
-    "height": "25",
-    "width": "22",
-    "shortcut": "(turkey)"
-  },
-  {
     "image": "skyrim.png",
     "height": "35",
     "width": "19",
@@ -1006,5 +1000,11 @@
     "height": "25",
     "width": "25",
     "shortcut": "(huh)"
+  },
+  {
+    "image": "turkey-1386104992.png",
+    "height": "17",
+    "width": "25",
+    "shortcut": "(turkey)"
   }
 ]
