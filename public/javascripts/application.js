@@ -66,6 +66,7 @@ $(function() {
   // Filter.
 
   var $filter = $(".filter");
+  var $filteredCount = $(".filtered-count");
   var $container = $(".emoticons");
   var $emoticons = $(".emoticon");
 
@@ -78,6 +79,15 @@ $(function() {
 
   function filterFromField() {
     filterTo(this.value);
+
+    var count = $(".filtering").find(".emoticon").not(".filtered-out").length;
+
+    if (count > 0) {
+      $filteredCount.find(".count").text(count);
+      $filteredCount.css("visibility", "visible");
+    } else {
+      $filteredCount.css("visibility", "hidden");
+    }
   }
 
   function filterTo(text) {
