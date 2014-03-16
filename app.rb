@@ -109,7 +109,7 @@ class Emoticon
   EMERITI_BASE_URL = "/emeriti/"
 
   def initialize(data, opts)
-    @path     = data["image"]
+    @path     = data["file"]
     @width    = data["width"].to_i
     @height   = data["height"].to_i
     @shortcut = data["shortcut"]

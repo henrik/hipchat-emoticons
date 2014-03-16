@@ -3,1024 +3,1024 @@
     "shortcut": ":D",
     "width": 18,
     "height": 18,
-    "image": "bigsmile.png"
+    "file": "bigsmile.png"
   },
   {
     "shortcut": ":-D",
     "width": 18,
     "height": 18,
-    "image": "bigsmile.png"
+    "file": "bigsmile.png"
   },
   {
     "shortcut": ":o",
     "width": 18,
     "height": 18,
-    "image": "gasp.png"
+    "file": "gasp.png"
   },
   {
     "shortcut": ":Z",
     "width": 18,
     "height": 18,
-    "image": "sealed.png"
+    "file": "sealed.png"
   },
   {
     "shortcut": ":p",
     "width": 18,
     "height": 18,
-    "image": "tongue.png"
+    "file": "tongue.png"
   },
   {
     "shortcut": ";p",
     "width": 18,
     "height": 18,
-    "image": "winktongue.gif"
+    "file": "winktongue.gif"
   },
   {
     "shortcut": ">:-(",
     "width": 18,
     "height": 18,
-    "image": "angry.png"
+    "file": "angry.png"
   },
   {
     "shortcut": "8)",
     "width": 18,
     "height": 18,
-    "image": "cool.png"
+    "file": "cool.png"
   },
   {
     "shortcut": "8-)",
     "width": 18,
     "height": 18,
-    "image": "cool.png"
+    "file": "cool.png"
   },
   {
     "shortcut": ":'(",
     "width": 18,
     "height": 18,
-    "image": "cry.png"
+    "file": "cry.png"
   },
   {
     "shortcut": ":(",
     "width": 18,
     "height": 18,
-    "image": "frown.png"
+    "file": "frown.png"
   },
   {
     "shortcut": ":#",
     "width": 18,
     "height": 18,
-    "image": "footinmouth.png"
+    "file": "footinmouth.png"
   },
   {
     "shortcut": "(embarrassed)",
     "width": 18,
     "height": 18,
-    "image": "embarrassed.png"
+    "file": "embarrassed.png"
   },
   {
     "shortcut": ":')",
     "width": 18,
     "height": 18,
-    "image": "happytear.gif"
+    "file": "happytear.gif"
   },
   {
     "shortcut": "O:)",
     "width": 18,
     "height": 22,
-    "image": "innocent.png"
+    "file": "innocent.png"
   },
   {
     "shortcut": ":-*",
     "width": 18,
     "height": 18,
-    "image": "kiss.png"
+    "file": "kiss.png"
   },
   {
     "shortcut": ":$",
     "width": 18,
     "height": 18,
-    "image": "moneymouth.png"
+    "file": "moneymouth.png"
   },
   {
     "shortcut": "(oops)",
     "width": 18,
     "height": 18,
-    "image": "oops.png"
+    "file": "oops.png"
   },
   {
     "shortcut": ":\\",
     "width": 18,
     "height": 18,
-    "image": "slant.png"
+    "file": "slant.png"
   },
   {
     "shortcut": ":)",
     "width": 18,
     "height": 18,
-    "image": "smile.png"
+    "file": "smile.png"
   },
   {
     "shortcut": ":-)",
     "width": 18,
     "height": 18,
-    "image": "smile.png"
+    "file": "smile.png"
   },
   {
     "shortcut": "=)",
     "width": 18,
     "height": 18,
-    "image": "smile.png"
+    "file": "smile.png"
   },
   {
     "shortcut": ":|",
     "width": 18,
     "height": 18,
-    "image": "straightface.png"
+    "file": "straightface.png"
   },
   {
     "shortcut": "(thumbsdown)",
     "width": 16,
     "height": 16,
-    "image": "thumbs_down.png"
+    "file": "thumbs_down.png"
   },
   {
     "shortcut": "(thumbsup)",
     "width": 16,
     "height": 16,
-    "image": "thumbs_up.png"
+    "file": "thumbs_up.png"
   },
   {
     "shortcut": ";)",
     "width": 18,
     "height": 18,
-    "image": "wink.png"
+    "file": "wink.png"
   },
   {
     "shortcut": ";-)",
     "width": 18,
     "height": 18,
-    "image": "wink.png"
+    "file": "wink.png"
   },
   {
-    "image": "chris.png",
+    "file": "chris.png",
     "height": "24",
     "width": "24",
     "shortcut": "(chris)"
   },
   {
-    "image": "facepalm.png",
+    "file": "facepalm.png",
     "height": "25",
     "width": "25",
     "shortcut": "(facepalm)"
   },
   {
-    "image": "garret.png",
+    "file": "garret.png",
     "height": "24",
     "width": "24",
     "shortcut": "(garret)"
   },
   {
-    "image": "krang.gif",
+    "file": "krang.gif",
     "height": "16",
     "width": "16",
     "shortcut": "(krang)"
   },
   {
-    "image": "lolwut.png",
+    "file": "lolwut.png",
     "height": "16",
     "width": "12",
     "shortcut": "(lolwut)"
   },
   {
-    "image": "pete.png",
+    "file": "pete.png",
     "height": "24",
     "width": "24",
     "shortcut": "(pete)"
   },
   {
-    "image": "pirate.gif",
+    "file": "pirate.gif",
     "height": "18",
     "width": "18",
     "shortcut": "(pirate)"
   },
   {
-    "image": "poo.png",
+    "file": "poo.png",
     "height": "21",
     "width": "23",
     "shortcut": "(poo)"
   },
   {
-    "image": "coffee.png",
+    "file": "coffee.png",
     "height": "24",
     "width": "24",
     "shortcut": "(coffee)"
   },
   {
-    "image": "beer.png",
+    "file": "beer.png",
     "height": "20",
     "width": "20",
     "shortcut": "(beer)"
   },
   {
-    "image": "sadpanda.png",
+    "file": "sadpanda.png",
     "height": "16",
     "width": "18",
     "shortcut": "(sadpanda)"
   },
   {
-    "image": "tree.png",
+    "file": "tree.png",
     "height": "24",
     "width": "24",
     "shortcut": "(tree)"
   },
   {
-    "image": "present.png",
+    "file": "present.png",
     "height": "16",
     "width": "16",
     "shortcut": "(present)"
   },
   {
-    "image": "rudolph.png",
+    "file": "rudolph.png",
     "height": "16",
     "width": "25",
     "shortcut": "(rudolph)"
   },
   {
-    "image": "santa.png",
+    "file": "santa.png",
     "height": "23",
     "width": "25",
     "shortcut": "(santa)"
   },
   {
-    "image": "kwanzaa.png",
+    "file": "kwanzaa.png",
     "height": "22",
     "width": "25",
     "shortcut": "(kwanzaa)"
   },
   {
-    "image": "menorah.png",
+    "file": "menorah.png",
     "height": "25",
     "width": "23",
     "shortcut": "(menorah)"
   },
   {
-    "image": "cornelius.png",
+    "file": "cornelius.png",
     "height": "22",
     "width": "25",
     "shortcut": "(cornelius)"
   },
   {
-    "image": "bumble.png",
+    "file": "bumble.png",
     "height": "25",
     "width": "24",
     "shortcut": "(bumble)"
   },
   {
-    "image": "rageguy.png",
+    "file": "rageguy.png",
     "height": "25",
     "width": "24",
     "shortcut": "(rageguy)"
   },
   {
-    "image": "troll.png",
+    "file": "troll.png",
     "height": "25",
     "width": "25",
     "shortcut": "(troll)"
   },
   {
-    "image": "rageguy.png",
+    "file": "rageguy.png",
     "height": "25",
     "width": "24",
     "shortcut": "(fu)"
   },
   {
-    "image": "hipchat.png",
+    "file": "hipchat.png",
     "height": "25",
     "width": "25",
     "shortcut": "(hipchat)"
   },
   {
-    "image": "yey.png",
+    "file": "yey.png",
     "height": "25",
     "width": "25",
     "shortcut": "(yey)"
   },
   {
-    "image": "yuno.png",
+    "file": "yuno.png",
     "height": "25",
     "width": "25",
     "shortcut": "(yuno)"
   },
   {
-    "image": "6/itsatrap.png",
+    "file": "6/itsatrap.png",
     "height": "25",
     "width": "25",
     "shortcut": "(itsatrap)"
   },
   {
-    "image": "heart.png",
+    "file": "heart.png",
     "height": "16",
     "width": "16",
     "shortcut": "(heart)"
   },
   {
-    "image": "foreveralone.png",
+    "file": "foreveralone.png",
     "height": "25",
     "width": "25",
     "shortcut": "(foreveralone)"
   },
   {
-    "image": "washington.png",
+    "file": "washington.png",
     "height": "25",
     "width": "25",
     "shortcut": "(washington)"
   },
   {
-    "image": "lincoln.png",
+    "file": "lincoln.png",
     "height": "25",
     "width": "25",
     "shortcut": "(lincoln)"
   },
   {
-    "image": "jobs.png",
+    "file": "jobs.png",
     "height": "25",
     "width": "25",
     "shortcut": "(jobs)"
   },
   {
-    "image": "taft.png",
+    "file": "taft.png",
     "height": "25",
     "width": "25",
     "shortcut": "(taft)"
   },
   {
-    "image": "gates.png",
+    "file": "gates.png",
     "height": "25",
     "width": "25",
     "shortcut": "(gates)"
   },
   {
-    "image": "awyea.png",
+    "file": "awyea.png",
     "height": "25",
     "width": "41",
     "shortcut": "(awyeah)"
   },
   {
-    "image": "cerealguy.png",
+    "file": "cerealguy.png",
     "height": "25",
     "width": "24",
     "shortcut": "(cereal)"
   },
   {
-    "image": "challengeaccepted.png",
+    "file": "challengeaccepted.png",
     "height": "25",
     "width": "20",
     "shortcut": "(challengeaccepted)"
   },
   {
-    "image": "content.png",
+    "file": "content.png",
     "height": "25",
     "width": "25",
     "shortcut": "(content)"
   },
   {
-    "image": "dumbbitch.png",
+    "file": "dumbbitch.png",
     "height": "25",
     "width": "18",
     "shortcut": "(dumb)"
   },
   {
-    "image": "lol.png",
+    "file": "lol.png",
     "height": "25",
     "width": "25",
     "shortcut": "(lol)"
   },
   {
-    "image": "megusta.png",
+    "file": "megusta.png",
     "height": "25",
     "width": "24",
     "shortcut": "(megusta)"
   },
   {
-    "image": "okay.png",
+    "file": "okay.png",
     "height": "25",
     "width": "18",
     "shortcut": "(okay)"
   },
   {
-    "image": "omg.png",
+    "file": "omg.png",
     "height": "23",
     "width": "25",
     "shortcut": "(omg)"
   },
   {
-    "image": "sadtroll.png",
+    "file": "sadtroll.png",
     "height": "20",
     "width": "25",
     "shortcut": "(sadtroll)"
   },
   {
-    "image": "reddit.png",
+    "file": "reddit.png",
     "height": "25",
     "width": "18",
     "shortcut": "(reddit)"
   },
   {
-    "image": "seomoz.png",
+    "file": "seomoz.png",
     "height": "25",
     "width": "21",
     "shortcut": "(seomoz)"
   },
   {
-    "image": "shamrock.png",
+    "file": "shamrock.png",
     "height": "21",
     "width": "22",
     "shortcut": "(shamrock)"
   },
   {
-    "image": "greenbeer.png",
+    "file": "greenbeer.png",
     "height": "20",
     "width": "20",
     "shortcut": "(greenbeer)"
   },
   {
-    "image": "wtf.png",
+    "file": "wtf.png",
     "height": "25",
     "width": "20",
     "shortcut": "(wtf)"
   },
   {
-    "image": "ohcrap.png",
+    "file": "ohcrap.png",
     "height": "21",
     "width": "25",
     "shortcut": "(ohcrap)"
   },
   {
-    "image": "8071/mike.png",
+    "file": "8071/mike.png",
     "height": "25",
     "width": "18",
     "shortcut": "(arrington)"
   },
   {
-    "image": "fuckyeah.png",
+    "file": "fuckyeah.png",
     "height": "23",
     "width": "25",
     "shortcut": "(fuckyeah)"
   },
   {
-    "image": "basket.png",
+    "file": "basket.png",
     "height": "25",
     "width": "25",
     "shortcut": "(basket)"
   },
   {
-    "image": "bunny.png",
+    "file": "bunny.png",
     "height": "24",
     "width": "24",
     "shortcut": "(bunny)"
   },
   {
-    "image": "cadbury.png",
+    "file": "cadbury.png",
     "height": "18",
     "width": "25",
     "shortcut": "(cadbury)"
   },
   {
-    "image": "chocobunny.png",
+    "file": "chocobunny.png",
     "height": "25",
     "width": "25",
     "shortcut": "(chocobunny)"
   },
   {
-    "image": "zzz.gif",
+    "file": "zzz.gif",
     "height": "24",
     "width": "24",
     "shortcut": "(zzz)"
   },
   {
-    "image": "ducreux.png",
+    "file": "ducreux.png",
     "height": "25",
     "width": "25",
     "shortcut": "(ducreux)"
   },
   {
-    "image": "android.png",
+    "file": "android.png",
     "height": "25",
     "width": "25",
     "shortcut": "(android)"
   },
   {
-    "image": "cake.png",
+    "file": "cake.png",
     "height": "24",
     "width": "24",
     "shortcut": "(cake)"
   },
   {
-    "image": "rebeccablack.png",
+    "file": "rebeccablack.png",
     "height": "25",
     "width": "20",
     "shortcut": "(rebeccablack)"
   },
   {
-    "image": "pbr.png",
+    "file": "pbr.png",
     "height": "24",
     "width": "13",
     "shortcut": "(pbr)"
   },
   {
-    "image": "dosequis.png",
+    "file": "dosequis.png",
     "height": "25",
     "width": "25",
     "shortcut": "(dosequis)"
   },
   {
-    "image": "ilied.png",
+    "file": "ilied.png",
     "height": "21",
     "width": "25",
     "shortcut": "(ilied)"
   },
   {
-    "image": "jackie.png",
+    "file": "jackie.png",
     "height": "25",
     "width": "41",
     "shortcut": "(jackie)"
   },
   {
-    "image": "areyoukiddingme.png",
+    "file": "areyoukiddingme.png",
     "height": "25",
     "width": "25",
     "shortcut": "(areyoukiddingme)"
   },
   {
-    "image": "sweetjesus.png",
+    "file": "sweetjesus.png",
     "height": "24",
     "width": "25",
     "shortcut": "(sweetjesus)"
   },
   {
-    "image": "farnsworth.png",
+    "file": "farnsworth.png",
     "height": "23",
     "width": "25",
     "shortcut": "(goodnews)"
   },
   {
-    "image": "10678/kennypowers.png",
+    "file": "10678/kennypowers.png",
     "height": "25",
     "width": "25",
     "shortcut": "(kennypowers)"
   },
   {
-    "image": "disapproval.png",
+    "file": "disapproval.png",
     "height": "18",
     "width": "23",
     "shortcut": "(disapproval)"
   },
   {
-    "image": "zoidberg.png",
+    "file": "zoidberg.png",
     "height": "25",
     "width": "25",
     "shortcut": "(zoidberg)"
   },
   {
-    "image": "badpokerface.png",
+    "file": "badpokerface.png",
     "height": "25",
     "width": "19",
     "shortcut": "(badpokerface)"
   },
   {
-    "image": "notbad.png",
+    "file": "notbad.png",
     "height": "25",
     "width": "17",
     "shortcut": "(notbad)"
   },
   {
-    "image": "pokerface.png",
+    "file": "pokerface.png",
     "height": "25",
     "width": "20",
     "shortcut": "(pokerface)"
   },
   {
-    "image": "philosoraptor.png",
+    "file": "philosoraptor.png",
     "height": "21",
     "width": "25",
     "shortcut": "(philosoraptor)"
   },
   {
-    "image": "samuel.png",
+    "file": "samuel.png",
     "height": "25",
     "width": "19",
     "shortcut": "(samuel)"
   },
   {
-    "image": "chewy.png",
+    "file": "chewy.png",
     "height": "25",
     "width": "25",
     "shortcut": "(chewie)"
   },
   {
-    "image": "pumpkin.png",
+    "file": "pumpkin.png",
     "height": "24",
     "width": "24",
     "shortcut": "(pumpkin)"
   },
   {
-    "image": "ghost.png",
+    "file": "ghost.png",
     "height": "24",
     "width": "24",
     "shortcut": "(ghost)"
   },
   {
-    "image": "candycorn.png",
+    "file": "candycorn.png",
     "height": "27",
     "width": "14",
     "shortcut": "(candycorn)"
   },
   {
-    "image": "caruso.png",
+    "file": "caruso.png",
     "height": "25",
     "width": "37",
     "shortcut": "(caruso)"
   },
   {
-    "image": "haveaseat.png",
+    "file": "haveaseat.png",
     "height": "25",
     "width": "18",
     "shortcut": "(haveaseat)"
   },
   {
-    "image": "scumbag.png",
+    "file": "scumbag.png",
     "height": "16",
     "width": "25",
     "shortcut": "(scumbag)"
   },
   {
-    "image": "yodawg.png",
+    "file": "yodawg.png",
     "height": "25",
     "width": "25",
     "shortcut": "(yodawg)"
   },
   {
-    "image": "truestory.png",
+    "file": "truestory.png",
     "height": "27",
     "width": "29",
     "shortcut": "(truestory)"
   },
   {
-    "image": "derp.png",
+    "file": "derp.png",
     "height": "27",
     "width": "25",
     "shortcut": "(derp)"
   },
   {
-    "image": "stare.png",
+    "file": "stare.png",
     "height": "25",
     "width": "34",
     "shortcut": "(stare)"
   },
   {
-    "image": "allthethings.png",
+    "file": "allthethings.png",
     "height": "30",
     "width": "36",
     "shortcut": "(allthethings)"
   },
   {
-    "image": "freddie.png",
+    "file": "freddie.png",
     "height": "35",
     "width": "17",
     "shortcut": "(freddie)"
   },
   {
-    "image": "wat.png",
+    "file": "wat.png",
     "height": "25",
     "width": "25",
     "shortcut": "(wat)"
   },
   {
-    "image": "skyrim.png",
+    "file": "skyrim.png",
     "height": "35",
     "width": "19",
     "shortcut": "(skyrim)"
   },
   {
-    "image": "dealwithit.gif",
+    "file": "dealwithit.gif",
     "height": "22",
     "width": "35",
     "shortcut": "(dealwithit)"
   },
   {
-    "image": "fap.png",
+    "file": "fap.png",
     "height": "25",
     "width": "19",
     "shortcut": "(fap)"
   },
   {
-    "image": "nothingtodohere.png",
+    "file": "nothingtodohere.png",
     "height": "25",
     "width": "16",
     "shortcut": "(nothingtodohere)"
   },
   {
-    "image": "orly.png",
+    "file": "orly.png",
     "height": "24",
     "width": "24",
     "shortcut": "(orly)"
   },
   {
-    "image": "hipster.png",
+    "file": "hipster.png",
     "height": "25",
     "width": "25",
     "shortcut": "(hipster)"
   },
   {
-    "image": "ashton.png",
+    "file": "ashton.png",
     "height": "25",
     "width": "21",
     "shortcut": "(ashton)"
   },
   {
-    "image": "chompy.gif",
+    "file": "chompy.gif",
     "height": "25",
     "width": "25",
     "shortcut": "(chompy)"
   },
   {
-    "image": "fry.png",
+    "file": "fry.png",
     "height": "25",
     "width": "19",
     "shortcut": "(fry)"
   },
   {
-    "image": "dance.gif",
+    "file": "dance.gif",
     "height": "23",
     "width": "26",
     "shortcut": "(dance)"
   },
   {
-    "image": "atlassian.png",
+    "file": "atlassian.png",
     "height": "23",
     "width": "25",
     "shortcut": "(atlassian)"
   },
   {
-    "image": "drevil.png",
+    "file": "drevil.png",
     "height": "25",
     "width": "37",
     "shortcut": "(drevil)"
   },
   {
-    "image": "boom.gif",
+    "file": "boom.gif",
     "height": "23",
     "width": "25",
     "shortcut": "(boom)"
   },
   {
-    "image": "ohgodwhy.jpeg",
+    "file": "ohgodwhy.jpeg",
     "height": "25",
     "width": "25",
     "shortcut": "(ohgodwhy)"
   },
   {
-    "image": "ceilingcat.png",
+    "file": "ceilingcat.png",
     "height": "14",
     "width": "25",
     "shortcut": "(ceilingcat)"
   },
   {
-    "image": "pingpong.png",
+    "file": "pingpong.png",
     "height": "22",
     "width": "25",
     "shortcut": "(pingpong)"
   },
   {
-    "image": "tea.png",
+    "file": "tea.png",
     "height": "24",
     "width": "24",
     "shortcut": "(tea)"
   },
   {
-    "image": "awthanks.png",
+    "file": "awthanks.png",
     "height": "30",
     "width": "31",
     "shortcut": "(awthanks)"
   },
   {
-    "image": "indeed.png",
+    "file": "indeed.png",
     "height": "30",
     "width": "24",
     "shortcut": "(indeed)"
   },
   {
-    "image": "badass.png",
+    "file": "badass.png",
     "height": "25",
     "width": "32",
     "shortcut": "(badass)"
   },
   {
-    "image": "ninja.png",
+    "file": "ninja.png",
     "height": "18",
     "width": "18",
     "shortcut": "(ninja)"
   },
   {
-    "image": "notsureif-1342015652.png",
+    "file": "notsureif-1342015652.png",
     "height": "25",
     "width": "19",
     "shortcut": "(notsureif)"
   },
   {
-    "image": "fwp-1342647892.png",
+    "file": "fwp-1342647892.png",
     "height": "25",
     "width": "30",
     "shortcut": "(fwp)"
   },
   {
-    "image": "firstworldproblem-1342647915.png",
+    "file": "firstworldproblem-1342647915.png",
     "height": "25",
     "width": "30",
     "shortcut": "(firstworldproblem)"
   },
   {
-    "image": "chucknorris-1342735388.png",
+    "file": "chucknorris-1342735388.png",
     "height": "25",
     "width": "25",
     "shortcut": "(chucknorris)"
   },
   {
-    "image": "notsureifgusta-1346093311.png",
+    "file": "notsureifgusta-1346093311.png",
     "height": "25",
     "width": "24",
     "shortcut": "(notsureifgusta)"
   },
   {
-    "image": "twss-1348262400.png",
+    "file": "twss-1348262400.png",
     "height": "25",
     "width": "20",
     "shortcut": "(twss)"
   },
   {
-    "image": "success-1348262443.png",
+    "file": "success-1348262443.png",
     "height": "25",
     "width": "25",
     "shortcut": "(success)"
   },
   {
-    "image": "iseewhatyoudidthere-1348262983.png",
+    "file": "iseewhatyoudidthere-1348262983.png",
     "height": "25",
     "width": "28",
     "shortcut": "(iseewhatyoudidthere)"
   },
   {
-    "image": "gangnamstyle-1349387710.gif",
+    "file": "gangnamstyle-1349387710.gif",
     "height": "30",
     "width": "17",
     "shortcut": "(gangnamstyle)"
   },
   {
-    "image": "shrug-1349463255.png",
+    "file": "shrug-1349463255.png",
     "height": "12",
     "width": "56",
     "shortcut": "(shrug)"
   },
   {
-    "image": "tableflip-1349463264.png",
+    "file": "tableflip-1349463264.png",
     "height": "13",
     "width": "109",
     "shortcut": "(tableflip)"
   },
   {
-    "image": "cerealspit-1349463282.png",
+    "file": "cerealspit-1349463282.png",
     "height": "24",
     "width": "41",
     "shortcut": "(cerealspit)"
   },
   {
-    "image": "bitbucket-1349806629.png",
+    "file": "bitbucket-1349806629.png",
     "height": "25",
     "width": "25",
     "shortcut": "(bitbucket)"
   },
   {
-    "image": "jira-1350074257.png",
+    "file": "jira-1350074257.png",
     "height": "23",
     "width": "18",
     "shortcut": "(jira)"
   },
   {
-    "image": "obama-1352231289.png",
+    "file": "obama-1352231289.png",
     "height": "25",
     "width": "33",
     "shortcut": "(obama)"
   },
   {
-    "image": "romney-1352231355.png",
+    "file": "romney-1352231355.png",
     "height": "25",
     "width": "25",
     "shortcut": "(romney)"
   },
   {
-    "image": "trump-1352738237.png",
+    "file": "trump-1352738237.png",
     "height": "25",
     "width": "30",
     "shortcut": "(trump)"
   },
   {
-    "image": "grumpycat-1366734534.png",
+    "file": "grumpycat-1366734534.png",
     "height": "25",
     "width": "25",
     "shortcut": "(grumpycat)"
   },
   {
-    "image": "confluence-1367948832.png",
+    "file": "confluence-1367948832.png",
     "height": "22",
     "width": "25",
     "shortcut": "(confluence)"
   },
   {
-    "image": "yougotitdude-1368219664.gif",
+    "file": "yougotitdude-1368219664.gif",
     "height": "25",
     "width": "48",
     "shortcut": "(yougotitdude)"
   },
   {
-    "image": "clarence-1369414730.png",
+    "file": "clarence-1369414730.png",
     "height": "29",
     "width": "25",
     "shortcut": "(clarence)"
   },
   {
-    "image": "continue-1369948567.png",
+    "file": "continue-1369948567.png",
     "height": "16",
     "width": "16",
     "shortcut": "(continue)"
   },
   {
-    "image": "failed-1369948578.png",
+    "file": "failed-1369948578.png",
     "height": "16",
     "width": "16",
     "shortcut": "(failed)"
   },
   {
-    "image": "successful-1369948592.png",
+    "file": "successful-1369948592.png",
     "height": "16",
     "width": "16",
     "shortcut": "(successful)"
   },
   {
-    "image": "unknown-1369948620.png",
+    "file": "unknown-1369948620.png",
     "height": "16",
     "width": "16",
     "shortcut": "(unknown)"
   },
   {
-    "image": "branch-1372171579.png",
+    "file": "branch-1372171579.png",
     "height": "16",
     "width": "16",
     "shortcut": "(branch)"
   },
   {
-    "image": "mindblown-1374883007.gif",
+    "file": "mindblown-1374883007.gif",
     "height": "25",
     "width": "25",
     "shortcut": "(mindblown)"
   },
   {
-    "image": "badjokeeel-1375463017.png",
+    "file": "badjokeeel-1375463017.png",
     "height": "26",
     "width": "33",
     "shortcut": "(badjokeeel)"
   },
   {
-    "image": "gtfo-1381428639.png",
+    "file": "gtfo-1381428639.png",
     "height": "25",
     "width": "25",
     "shortcut": "(gtfo)"
   },
   {
-    "image": "huh-1381428657.png",
+    "file": "huh-1381428657.png",
     "height": "25",
     "width": "25",
     "shortcut": "(huh)"
   },
   {
-    "image": "turkey-1386104992.png",
+    "file": "turkey-1386104992.png",
     "height": "17",
     "width": "25",
     "shortcut": "(turkey)"
   },
   {
-    "image": "fonzie-1386958620.png",
+    "file": "fonzie-1386958620.png",
     "height": "25",
     "width": "34",
     "shortcut": "(fonzie)"
   },
   {
-    "image": "stash-1391127729.png",
+    "file": "stash-1391127729.png",
     "height": "25",
     "width": "23",
     "shortcut": "(stash)"
   },
   {
-    "image": "nextgendev-1394050121.png",
+    "file": "nextgendev-1394050121.png",
     "height": "29",
     "width": "23",
     "shortcut": "(nextgendev)"
