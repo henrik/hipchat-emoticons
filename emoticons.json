@@ -1024,5 +1024,59 @@
     "height": "29",
     "width": "23",
     "shortcut": "(nextgendev)"
+  },
+  {
+    "file": "hodor-1396908720.png",
+    "height": "30",
+    "width": "21",
+    "shortcut": "(hodor)"
+  },
+  {
+    "file": "arya-1396908740.png",
+    "height": "30",
+    "width": "24",
+    "shortcut": "(arya)"
+  },
+  {
+    "file": "tyrion-1396908780.png",
+    "height": "31",
+    "width": "27",
+    "shortcut": "(tyrion)"
+  },
+  {
+    "file": "jaime-1396908791.png",
+    "height": "30",
+    "width": "26",
+    "shortcut": "(jaime)"
+  },
+  {
+    "file": "ned-1396908800.png",
+    "height": "25",
+    "width": "23",
+    "shortcut": "(ned)"
+  },
+  {
+    "file": "jonsnow-1396908809.png",
+    "height": "25",
+    "width": "30",
+    "shortcut": "(jonsnow)"
+  },
+  {
+    "file": "daenerys-1396908819.png",
+    "height": "25",
+    "width": "30",
+    "shortcut": "(daenerys)"
+  },
+  {
+    "file": "joffrey-1396908826.png",
+    "height": "31",
+    "width": "23",
+    "shortcut": "(joffrey)"
+  },
+  {
+    "file": "tywin-1396908839.png",
+    "height": "30",
+    "width": "22",
+    "shortcut": "(tywin)"
   }
 ]
