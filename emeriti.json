@@ -1,12 +1,12 @@
 [
   {
-    "image": "timeforthat.gif",
+    "file": "timeforthat.gif",
     "height": "30",
     "width": "25",
     "shortcut": "(timeforthat)"
   },
   {
-    "image": "gaytroll.gif",
+    "file": "gaytroll.gif",
     "height": "25",
     "width": "20",
     "shortcut": "(gaytroll)"
