@@ -294,12 +294,6 @@
     "shortcut": "(fu)"
   },
   {
-    "file": "hipchat.png",
-    "height": "25",
-    "width": "25",
-    "shortcut": "(hipchat)"
-  },
-  {
     "file": "yey.png",
     "height": "25",
     "width": "25",
@@ -1078,5 +1072,11 @@
     "height": "30",
     "width": "22",
     "shortcut": "(tywin)"
+  },
+  {
+    "file": "hipchat-1399396865.png",
+    "height": "25",
+    "width": "25",
+    "shortcut": "(hipchat)"
   }
 ]
