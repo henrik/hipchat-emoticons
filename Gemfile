@@ -1,4 +1,5 @@
-source "http://rubygems.org"
+source "https://rubygems.org"
+ruby "2.1.2"
 
 gem "rack-canonical-host"
 gem "sinatra"
