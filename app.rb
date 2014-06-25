@@ -8,29 +8,18 @@ require "bundler"
 Bundler.require :default, (ENV['RACK_ENV'] || "development").to_sym
 
 
-# Sass on Heroku.
-# https://devcenter.heroku.com/articles/using-sass
-# http://autonomousmachine.com/posts/2011/5/18/sass-and-sinatra-on-heroku
-
-require "sass/plugin/rack"
-use Sass::Plugin::Rack
-
-use Rack::Static,
-  urls: ['/stylesheets/'],
-  root: "tmp"
-
-Sass::Plugin.options.merge!(
-  template_location: '.',
-  css_location: 'tmp/stylesheets'
-)
-
 # Configure.
 
 set :haml, format: :html5, attr_wrapper: %{"}
 
+
 # Control.
 
-get '/' do
+get "/css" do
+  scss :screen
+end
+
+get "/" do
   # Cache in Varnish: http://devcenter.heroku.com/articles/http-caching
   headers 'Cache-Control' => 'public, max-age=3600'
 
