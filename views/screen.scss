@@ -31,6 +31,9 @@ a, a:visited {
 
 .emoticons {
   margin: 50px 0 30px;
+  &.enabled {
+    text-align: justify;
+  }
 }
 
 a.emoticon {
@@ -39,6 +42,7 @@ a.emoticon {
   height: 50px;
   padding: 8px;
   text-decoration: none;
+  text-align: center;
   img {
     border: none;
   }
