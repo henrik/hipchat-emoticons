@@ -36,7 +36,7 @@
 
       %input.filter(type="search" placeholder="Filter…" autofocus)
 
-    .emoticons.enabled
+    .emoticons.active-emoticons
       - @emoticons.each do |e|
         = partial :emoticon, :e => e
 
