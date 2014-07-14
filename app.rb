@@ -25,7 +25,7 @@ get "/" do
 
   @file       = EmoticonFile.new("./emoticons.json")
   @emoticons  = @file.emoticons(params[:order])
-  @emeriti    = EmoticonFile.new("./emeriti.json", :emeriti => true).emoticons
+  @emeriti    = EmoticonFile.new("./emeriti.json", emeriti: true).emoticons
   @all_emoticons = @emoticons + @emeriti
   @updated_at = @file.updated_at
   haml :index
@@ -60,7 +60,7 @@ class EmoticonFile
   end
 
   def emoticons(order=nil)
-    es = json.map { |e| Emoticon.new(e, :emeriti => @emeriti) }
+    es = json.map { |e| Emoticon.new(e, emeriti: @emeriti) }
 
     # The file can have duplicates, e.g. ":)" and ":-)". Only keep the first.
     known_paths = Set.new

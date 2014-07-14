@@ -38,7 +38,7 @@
 
     .emoticons.active-emoticons
       - @emoticons.each do |e|
-        = partial :emoticon, :e => e
+        = partial :emoticon, e: e
 
     %h2 Emoticons emeriti
 
@@ -47,7 +47,7 @@
 
     .emoticons.emoticons-emeriti
       - @emeriti.each do |e|
-        = partial :emoticon, :e => e
+        = partial :emoticon, e: e
 
     %footer
       %p
