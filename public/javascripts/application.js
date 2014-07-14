@@ -4,11 +4,22 @@ $(function() {
 
   var $notification = $(".notification");
   var notificationTimeout;
+
   function notify(text) {
     clearTimeout(notificationTimeout);
     $notification.text(text).fadeIn();
     notificationTimeout = setTimeout(function() { $notification.fadeOut() }, 1500);
   }
+
+
+  var activeEmoticons = $(".active-emoticons .emoticon");
+  var emoticonsEmeriti = $(".emoticons-emeriti .emoticon");
+
+  // Emeriti don't use the flash, since it makes it difficult to save images.
+  // Should be rare that you need the "copy shortcut" functionality for them.
+  emoticonsEmeriti.click(function() {
+    showNonFlashCopyPrompt(this);
+  });
 
 
   // Clipboard.
@@ -21,15 +32,6 @@ $(function() {
   // A slight timeout removes that jump.
 
   var clip = new ZeroClipboard(null, { moviePath: "/ZeroClipboard.swf" });
-
-  var activeEmoticons = $(".active-emoticons .emoticon");
-  var emoticonsEmeriti = $(".emoticons-emeriti .emoticon");
-
-  // Emeriti don't use the flash, since it makes it difficult to save images.
-  // Should be rare that you need the "copy shortcut" functionality for them.
-  emoticonsEmeriti.click(function() {
-    showNonFlashCopyPrompt(this);
-  });
 
   activeEmoticons.hover(hover, blur);
   clip.on("mouseover", hover);
