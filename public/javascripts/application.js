@@ -22,13 +22,22 @@ $(function() {
 
   var clip = new ZeroClipboard(null, { moviePath: "/ZeroClipboard.swf" });
 
-  $(".emoticon").hover(hover, blur);
+  var activeEmoticons = $(".active-emoticons .emoticon");
+  var emoticonsEmeriti = $(".emoticons-emeriti .emoticon");
+
+  // Emeriti don't use the flash, since it makes it difficult to save images.
+  // Should be rare that you need the "copy shortcut" functionality for them.
+  emoticonsEmeriti.click(function() {
+    showNonFlashCopyPrompt(this);
+  });
+
+  activeEmoticons.hover(hover, blur);
   clip.on("mouseover", hover);
   clip.on("mouseout", blur);
 
-  $(".emoticon").click(function() {
+  activeEmoticons.click(function() {
     if (!clip.flashActuallyWorks) {
-      prompt("Copy this:", $(this).data("shortcut"));
+      showNonFlashCopyPrompt(this);
     }
     return false;
   });
@@ -36,7 +45,7 @@ $(function() {
   clip.on("load", function() {
     clip.flashActuallyWorks = true;
 
-    $(".emoticon").hover(function() {
+    activeEmoticons.hover(function() {
       clip.setText($(this).data("shortcut"));
       clip.glue(this);
     });
@@ -60,6 +69,10 @@ $(function() {
 
   function actuallyBlur() {
     $(this).removeClass("hover");
+  }
+
+  function showNonFlashCopyPrompt(element) {
+    prompt("Copy this:", $(element).data("shortcut"));
   }
 
 
