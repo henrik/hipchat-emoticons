@@ -1,20 +1,14 @@
 [
   {
-    "file": "timeforthat.gif",
-    "height": "30",
-    "width": "25",
+    "url": "/emeriti/timeforthat.gif",
     "shortcut": "(timeforthat)"
   },
   {
-    "file": "gaytroll.gif",
-    "height": "25",
-    "width": "20",
+    "url": "/emeriti/gaytroll.gif",
     "shortcut": "(gaytroll)"
   },
   {
-    "file": "fap.png",
-    "height": "25",
-    "width": "19",
+    "url": "/emeriti/fap.png",
     "shortcut": "(fap)"
   }
 ]

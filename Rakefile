@@ -1,38 +1,38 @@
-require "pp"
+require "open-uri"
 require "rubygems"
 require "json"
-require "cgi"
-
-# slant.png workaround :\ https://github.com/henrik/hipchat-emoticons/pull/10
-# Doubly escaped for Ruby + JS.
-BOOKMARKLET = 'alert("Close this dialog and copy the URL, then go back to the terminal!"); re = new RegExp("^"+config.group_id+"/");' +
-              'es = []; for (k in config.emoticons) { es.push(config.emoticons[k]) }; ' +
-              'es = es.filter(function(x) { return !x.file.match(re) }).map(function(x) { delete x.regex; if (x.file == "slant.png") x.shortcut = ":\\\\"; return x; });' +
-              'location.hash = JSON.stringify(es)'
 
 desc "Updates emoticons.json."
 task :default do
+  begin
+    token = File.read(File.expand_path "~/.hipchat-token").strip
+  rescue Errno::ENOENT
+    raise("Get your API token from https://auctionet.hipchat.com/account/api and put it in ~/.hipchat-token")
+  end
 
-  IO.popen("pbcopy", "w") { |f| f << BOOKMARKLET }
-  puts "Copied bookmarklet to clipboard."
+  url = "https://api.hipchat.com/v2/emoticon?type=global&max-results=1000&auth_token=#{token}"
 
-  `open -g https://hipchat.com/chat`
-  puts "Opened chat in browser."
-  puts " * Log in if necessary."
-  puts " * Run the bookmarklet, do what it says."
-  print " * Hit Return when done:"
-  gets
-  raw_json = `pbpaste`.split('#', 2).last
+  json = open(url).read
+  data = JSON.parse(json)
+  items = data["items"]
 
-  # May contain HTML entities.
-  raw_json = CGI.unescapeHTML(raw_json)
+  # Sort newest (highest id) last.
+  items.sort_by! { |item| item["id"] }
 
-  json = JSON.parse(raw_json)
+  # We could get width and height by requesting details for
+  # each emoticon, but that's slow and can be throttled.
+  items.map! { | item|
+    {
+      url: item["url"],
+      shortcut: "(#{item["shortcut"]})",
+    }
+  }
 
-  pretty = JSON.pretty_generate(json)
+  non_api_items = JSON.parse(File.read("non_api_emoticons.json"))
+
+  pretty = JSON.pretty_generate(non_api_items + items)
 
   file = "emoticons.json"
-  puts pretty
   File.open(file, "w") { |f| f.puts pretty }
   puts "Wrote to #{file}."
 end

@@ -25,7 +25,7 @@ get "/" do
 
   @file       = EmoticonFile.new("./emoticons.json")
   @emoticons  = @file.emoticons(params[:order])
-  @emeriti    = EmoticonFile.new("./emeriti.json", emeriti: true).emoticons
+  @emeriti    = EmoticonFile.new("./emeriti.json").emoticons
   @all_emoticons = @emoticons + @emeriti
   @updated_at = @file.updated_at
   haml :index
@@ -51,23 +51,21 @@ end
 require "set"
 
 class EmoticonFile
-
   BY_RECENT = "recent"
 
-  def initialize(file, opts={})
+  def initialize(file)
     @file = file
-    @emeriti = opts[:emeriti]
   end
 
   def emoticons(order=nil)
-    es = json.map { |e| Emoticon.new(e, emeriti: @emeriti) }
+    es = json.map { |e| Emoticon.new(e) }
 
     # The file can have duplicates, e.g. ":)" and ":-)". Only keep the first.
-    known_paths = Set.new
+    known_urls = Set.new
     uniques = []
     es.each do |e|
-      uniques << e unless known_paths.include?(e.path)
-      known_paths << e.path
+      uniques << e unless known_urls.include?(e.url)
+      known_urls << e.url
     end
 
     if order == BY_RECENT
@@ -92,30 +90,10 @@ end
 
 class Emoticon
   include Comparable
-  attr_reader :shortcut, :path, :width, :height
+  attr_reader :shortcut, :url
 
-  BASE_URL = "https://dujrsrsgsd3nh.cloudfront.net/img/emoticons/"
-  EMERITI_BASE_URL = "/emeriti/"
-
-  def initialize(data, opts)
-    @path     = data["file"]
-    @width    = data["width"].to_i
-    @height   = data["height"].to_i
+  def initialize(data)
+    @url     = data["url"]
     @shortcut = data["shortcut"]
-    @emeriti  = opts[:emeriti]
-  end
-
-  def url
-    File.join(base_url, @path)
-  end
-
-  private
-
-  def base_url
-    if @emeriti
-      EMERITI_BASE_URL
-    else
-      BASE_URL
-    end
   end
 end

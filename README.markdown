@@ -33,9 +33,7 @@ Make sure you're running Ruby 1.9 or better.
 
 ## Updating emoticons.json
 
-Run `rake` and follow its instructions.
-
-The task will update `emoticons.json`. Commit and push.
+Run `rake`. This will update `emoticons.json`. Commit and push.
 
 
 ## Credits and license
