@@ -1,18 +1,10 @@
 # HipChat emoticons
 
-A Sinatra app running on Heroku.
+This was a Sinatra app on <http://hipchat-emoticons.nyh.name> listing [HipChat](http://hipchat.com) emoticons.
 
-See it here: <http://hipchat-emoticons.nyh.name>
+They have since added their own site, so now the site is deprecated and redirects to theirs.
 
-## Noticed an unlisted emoticon?
-
-There is an update script to update the emoticon set. The process is semi-manual, so I run it about once a week.
-
-If you notice new emoticons, feel free to [create a GitHub *issue*](https://github.com/henrik/hipchat-emoticons/issues/new) or [ping me on Twitter](http://twitter.com/henrik) and I'll probably update sooner.
-
-*Pull requests* for new emoticons aren't necessary since I'll just use the update script.
-
-Pull requests for other things are of course very welcome.
+If you want a code example of how to retrieve their emoticon list with Ruby, feel free to look at older versions of this code.
 
 
 ## Want to request a new emoticon?
@@ -20,20 +12,6 @@ Pull requests for other things are of course very welcome.
 This site just lists the emoticons that HipChat supports. Contact them if you want to suggest additions.
 
 Or you can [upload custom emoticons](https://hipchat.com/admin/emoticons) that only work on your account.
-
-
-## Running locally
-
-Make sure you're running Ruby 1.9 or better.
-
-    bundle install
-    rackup
-    open http://localhost:9292
-
-
-## Updating emoticons.json
-
-Run `rake`. This will update `emoticons.json`. Commit and push.
 
 
 ## Credits and license

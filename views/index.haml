@@ -13,48 +13,9 @@
 
   %body
 
-    .notification
-
-    %header
-      %h1 HipChat emoticons
-      %p
-        A complete list of
-        <strong>#{@emoticons.length}</strong>
-        <a href="http://www.hipchat.com/r/2zt39">HipChat</a> emoticons.
-        Click to copy.
-
+    %p <img src="https://dujrsrsgsd3nh.cloudfront.net/img/emoticons/dealwithit.gif" width="35" height="22">
     %p
-      - case params[:order]
-      - when EmoticonFile::BY_RECENT
-        <a href="/">alphabetical</a> / <strong>by recently added or updated</strong>
-      - else
-        <strong>alphabetical</strong> / <a href="/?order=recent">by recently added or updated</a>
+      Hullo! HipChat now has <a href="https://www.hipchat.com/emoticons">their own official emoticon listing page</a>, so this page is no more.
 
-    %form.filter-form
-      :javascript
-        var shortcuts = #{@all_emoticons.map(&:shortcut)};
-
-      %input.filter(type="search" placeholder="Filter…" autofocus)
-
-    .emoticons.active-emoticons
-      - @emoticons.each do |e|
-        = partial :emoticon, e: e
-
-    %h2 Emoticons emeriti
-
-    %p These emoticons were removed by HipChat, but you can possibly <a href="https://hipchat.com/admin/emoticons">upload them as custom emoticons</a>.
-    %p Some may have invalid dimensions as custom emoticons: resize the image or <a href="http://help.hipchat.com">contact HipChat</a> and ask them to change that.
-
-    .emoticons.emoticons-emeriti
-      - @emeriti.each do |e|
-        = partial :emoticon, e: e
-
-    %footer
-      %p
-        %span.footer-part Not affiliated with Atlassian HipChat.
-        %span.footer-part Emoticon requests, questions or complaints? <a href="http://help.hipchat.com/">Contact HipChat</a>.
-
-      %p
-        %span.footer-part Last updated #{@updated_at.strftime("%b %e, %Y")}.
-        %span.footer-part This site is by <a href="http://henrik.nyh.se">Henrik Nyh</a>.
-        %span.footer-part <a href="https://github.com/henrik/hipchat-emoticons">View source on GitHub</a>.
+    %p(style="font-size:45px")
+      %a(href="https://www.hipchat.com/emoticons") To the emoticons!
